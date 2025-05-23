@@ -6197,7 +6197,7 @@
           </td>
           <td>Suspended Instance Status</td>
           <td>Core</td>
-          <td>The instance Status of Suspended indicates that an instance of a Primitive was Active at one point in time and may be Active again, but is not currently operational. This may be due to the Primitive not meeting performance expectations (e.g. for an Allocation System instance), security issues, or due to failure of the Agent operating the Primitive to satisfy other requirements such as those specified in the First Loss Capital or Asset Liability Management frameworks.</td>
+          <td>The instance Status of Suspended indicates that an instance of a Primitive was Active at one point in time and may be Active again, but is not currently operational. This may be due to the Primitive not meeting performance expectations (e.g. for an Allocation System instance), security issues, or due to failure of the Agent operating the Primitive to satisfy other requirements such as those specified in the Risk Capital or Asset Liability Management frameworks.</td>
         </tr>
         <tr>
           <td>
@@ -6289,7 +6289,7 @@
           </td>
           <td>Current Primitives</td>
           <td>Core</td>
-          <td>The current Sky Primitives are:• Genesis Primitives ◦ Agent Creation Primitive ◦ Star Transformation Primitive ◦ Executor Transformation Primitive ◦ Agent Token Primitive• Operational Primitives ◦ Executor Accord Primitive ◦ Root Edit Primitive ◦ Light Agent Primitive• Ecosystem Upkeep Primitives ◦ Distribution Requirement Primitive ◦ Market Cap Fee Primitive ◦ Upkeep Rebate Primitive• SkyLink Primitives ◦ Token SkyLink Primitive• Demand Side Stablecoin Primitives ◦ Accessibility Reward Primitive ◦ Integration Boost Primitive ◦ Pioneer Chain Primitive• Supply Side Stablecoin Primitives ◦ Allocation System Primitive ◦ First Loss Capital Rental Primitive ◦ Actively Stabilizing Collateral Rental Primitive• Core Governance Primitives ◦ Core Governance Reward Primitive</td>
+          <td>The current Sky Primitives are:• Genesis Primitives ◦ Agent Creation Primitive ◦ Star Transformation Primitive ◦ Executor Transformation Primitive ◦ Agent Token Primitive• Operational Primitives ◦ Executor Accord Primitive ◦ Root Edit Primitive ◦ Light Agent Primitive• Ecosystem Upkeep Primitives ◦ Distribution Requirement Primitive ◦ Market Cap Fee Primitive ◦ Upkeep Rebate Primitive• SkyLink Primitives ◦ Token SkyLink Primitive• Demand Side Stablecoin Primitives ◦ Accessibility Reward Primitive ◦ Integration Boost Primitive ◦ Pioneer Chain Primitive• Supply Side Stablecoin Primitives ◦ Allocation System Primitive ◦ Junior Risk Capital Rental Primitive ◦ Actively Stabilizing Collateral Rental Primitive• Core Governance Primitives ◦ Core Governance Reward Primitive</td>
         </tr>
         <tr>
           <td>
@@ -6841,7 +6841,7 @@
           </td>
           <td>Agent Token Emissions</td>
           <td>Core</td>
-          <td>The Agent Token Primitive must specify whether token emissions beyond the current supply have been irreversibly disabled. Once Disabled is set to True, the action cannot be undone by the Agent. Sky Governance retains the ability to revert the Disabled setting where the Agent is in violation of First Loss Capital requirements and emissions are required by the Risk Framework.</td>
+          <td>The Agent Token Primitive must specify whether token emissions beyond the current supply have been irreversibly disabled. Once Disabled is set to True, the action cannot be undone by the Agent. Sky Governance retains the ability to revert the Disabled setting where the Agent is in violation of Risk Capital requirements and emissions are required by the Risk Framework.</td>
         </tr>
         <tr>
           <td>
@@ -10531,11 +10531,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.2.4 - First Loss Capital Rental Primitive</dfn>
+            <dfn>A.2.4 - Junior Risk Capital Rental Primitive</dfn>
           </td>
-          <td>First Loss Capital Rental Primitive</td>
+          <td>Junior Risk Capital Rental Primitive</td>
           <td>Core</td>
-          <td>The First Loss Capital Rental Primitive is a mechanism enabling Star Agents to rapidly rent First Loss Capital from each other, ensuring that capital gets deployed to where the best opportunities are.</td>
+          <td>The Junior Risk Capital Rental Primitive is a mechanism enabling Star Agents to rapidly rent First Loss Capital from each other, ensuring that capital gets deployed to where the best opportunities are.</td>
         </tr>
         <tr>
           <td>
@@ -15147,7 +15147,7 @@
           <td>Andromeda</td>
           <td>Core</td>
           <td>
-            Historically, Andromeda balanced Sky Core's Cash Stablecoin liquidity by allocating excess into low-risk treasury strategies and replenishing shortages. Control of the Andromeda RWA Arranged Structure is currently being transitioned to Launch Agent 1. Until the transition to Launch Agent 1 is complete, Andromeda continues to be controlled by Sky Core, subject to the requirements defined in <dfn>A.3.4 - Sky Core Asset Liability Management Rules</dfn>. Post-transition, Launch Agent 1 will manage Andromeda as a non-ASC asset within its Collateral Portfolio, subject to FLC requirements.
+            Historically, Andromeda balanced Sky Core's Cash Stablecoin liquidity by allocating excess into low-risk treasury strategies and replenishing shortages. Control of the Andromeda RWA Arranged Structure is currently being transitioned to Launch Agent 1. Until the transition to Launch Agent 1 is complete, Andromeda continues to be controlled by Sky Core, subject to the requirements defined in <dfn>A.3.4 - Sky Core Asset Liability Management Rules</dfn>. Post-transition, Launch Agent 1 will manage Andromeda as a non-ASC asset within its Collateral Portfolio, subject to JRC requirements.
           </td>
         </tr>
         <tr>
@@ -22094,7 +22094,7 @@
           <td>Spark</td>
           <td>Core</td>
           <td>
-            Token emissions beyond the Genesis Supply are permanently disabled; this cannot be reverted by Spark Governance. Sky Governance retains the ability to revert where Spark is in violation of First Loss Capital requirements and emissions are required by the Risk Framework. See <dfn>A.3.3</dfn>.
+            Token emissions beyond the Genesis Supply are permanently disabled; this cannot be reverted by Spark Governance. Sky Governance retains the ability to revert where Spark is in violation of Junior Risk Capital requirements and emissions are required by the Risk Framework. See <dfn>A.3.3</dfn>.
           </td>
         </tr>
         <tr>
@@ -24229,12 +24229,12 @@
         </tr>
         <tr>
           <td>
-            <dfn>First Loss Capital Rental Primitive</dfn>
+            <dfn>Junior Risk Capital Rental Primitive</dfn>
           </td>
           <td>Spark</td>
           <td>Core</td>
           <td>
-            The documents herein contain all data and specifications for Spark's Instances of the First Loss Capital Rental Primitive. See <dfn>A.2.4 - First Loss Capital Rental Primitive</dfn>.
+            The documents herein contain all data and specifications for Spark's Instances of the Junior Risk Capital Rental Primitive. See <dfn>A.2.4 - Junior Risk Capital Rental Primitive</dfn>.
           </td>
         </tr>
         <tr>
@@ -24243,7 +24243,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The documents herein organize all base information relevant to Spark's usage of the First Loss Capital Rental Primitive.</td>
+          <td>The documents herein organize all base information relevant to Spark's usage of the Junior Risk Capital Rental Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -24259,7 +24259,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>This document contains a Directory of all Instances of the First Loss Capital Rental Primitive with Instance status of Active.</td>
+          <td>This document contains a Directory of all Instances of the Junior Risk Capital Rental Primitive with Instance status of Active.</td>
         </tr>
         <tr>
           <td>
@@ -24267,7 +24267,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>This document contains a Directory of all Instances of the First Loss Capital Rental Primitive with Instance status of Completed.</td>
+          <td>This document contains a Directory of all Instances of the Junior Risk Capital Rental Primitive with Instance status of Completed.</td>
         </tr>
         <tr>
           <td>
@@ -24276,7 +24276,7 @@
           <td>Spark</td>
           <td>Core</td>
           <td>
-            This document contains a Directory of all prospective Instances of the First Loss Capital Rental Primitive whose Invocation is currently in progress. Invocations that are completed successfully are moved to <dfn>Active Instances Directory</dfn>, whereas failed Invocations are Archived in <dfn>Hub Data Repository</dfn>.
+            This document contains a Directory of all prospective Instances of the Junior Risk Capital Rental Primitive whose Invocation is currently in progress. Invocations that are completed successfully are moved to <dfn>Active Instances Directory</dfn>, whereas failed Invocations are Archived in <dfn>Hub Data Repository</dfn>.
           </td>
         </tr>
         <tr>
@@ -24293,7 +24293,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The subtrees for archived Invocations and Instances of the First Loss Capital Rental Primitive are stored here.</td>
+          <td>The subtrees for archived Invocations and Instances of the Junior Risk Capital Rental Primitive are stored here.</td>
         </tr>
         <tr>
           <td>
@@ -24301,7 +24301,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The subtrees for failed Invocations of the First Loss Capital Rental Primitive are stored here.</td>
+          <td>The subtrees for failed Invocations of the Junior Risk Capital Rental Primitive are stored here.</td>
         </tr>
         <tr>
           <td>
@@ -24309,7 +24309,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The subtrees for Instances of the First Loss Capital Rental Primitive with Suspended Status are stored here.</td>
+          <td>The subtrees for Instances of the Junior Risk Capital Rental Primitive with Suspended Status are stored here.</td>
         </tr>
         <tr>
           <td>
@@ -24317,7 +24317,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The Instances of the First Loss Capital Rental Primitive with Active Status are stored herein.</td>
+          <td>The Instances of the Junior Risk Capital Rental Primitive with Active Status are stored herein.</td>
         </tr>
         <tr>
           <td>
@@ -24325,7 +24325,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The Instances of the First Loss Capital Rental Primitive with Completed Status are stored herein.</td>
+          <td>The Instances of the Junior Risk Capital Rental Primitive with Completed Status are stored herein.</td>
         </tr>
         <tr>
           <td>
@@ -24334,7 +24334,7 @@
           <td>Spark</td>
           <td>Core</td>
           <td>
-            The in progress Invocations of the First Loss Capital Rental Primitive are contained herein. Once an Invocation is successfully completed, its subtree will be moved to <dfn>Active Instances</dfn>.
+            The in progress Invocations of the Junior Risk Capital Rental Primitive are contained herein. Once an Invocation is successfully completed, its subtree will be moved to <dfn>Active Instances</dfn>.
           </td>
         </tr>
         <tr>
@@ -25429,7 +25429,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The signers of the Freezer Multisig should exercise their authority to freeze the Spark Liquidity Layer in the event that Spark is not complying with rules regarding First Loss Capital or Asset Liability Management, or in the event of another emergency. The signers should consult with Ecosystem Actor DAOcraft before exercising such authority, unless such consultation would cause a delay that could result in a loss of user funds or harm to Sky or Spark. Ecosystem Actor DAOcraft may also ask the signers to exercise the Freezer Multisig in an emergency. The signers will work with DAOcraft and, if necessary, other Ecosystem Actors, in good faith in determining whether to exercise their authority based on such request. Each action executed by the Freezer Multisig, including any function calls and their parameters, must be reported to the Sky community within a reasonable time frame through a post on the Sky Forum.</td>
+          <td>The signers of the Freezer Multisig should exercise their authority to freeze the Spark Liquidity Layer in the event that Spark is not complying with rules regarding Risk Capital or Asset Liability Management, or in the event of another emergency. The signers should consult with Ecosystem Actor DAOcraft before exercising such authority, unless such consultation would cause a delay that could result in a loss of user funds or harm to Sky or Spark. Ecosystem Actor DAOcraft may also ask the signers to exercise the Freezer Multisig in an emergency. The signers will work with DAOcraft and, if necessary, other Ecosystem Actors, in good faith in determining whether to exercise their authority based on such request. Each action executed by the Freezer Multisig, including any function calls and their parameters, must be reported to the Sky community within a reasonable time frame through a post on the Sky Forum.</td>
         </tr>
         <tr>
           <td>
@@ -27110,7 +27110,7 @@
           <td>Launch Agent 1</td>
           <td>Core</td>
           <td>
-            Token emissions beyond the Genesis Supply are permanently disabled; this cannot be reverted by Launch Agent 1 Governance. Sky Governance retains the ability to revert where Launch Agent 1 is in violation of First Loss Capital requirements and emissions are required by the Risk Framework. See <dfn>A.3.3</dfn>.
+            Token emissions beyond the Genesis Supply are permanently disabled; this cannot be reverted by Launch Agent 1 Governance. Sky Governance retains the ability to revert where Launch Agent 1 is in violation of Risk Capital requirements and emissions are required by the Risk Framework. See <dfn>A.3.3</dfn>.
           </td>
         </tr>
         <tr>
@@ -28905,12 +28905,12 @@
         </tr>
         <tr>
           <td>
-            <dfn>First Loss Capital Rental Primitive</dfn>
+            <dfn>Junior Risk Capital Rental Primitive</dfn>
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
           <td>
-            The documents herein contain all data and specifications for Launch Agent 1's Instances of the First Loss Capital Rental Primitive. See <dfn>A.2.4 - First Loss Capital Rental Primitive</dfn>.
+            The documents herein contain all data and specifications for Launch Agent 1's Instances of the Junior Risk Capital Rental Primitive. See <dfn>A.2.4 - Junior Risk Capital Rental Primitive</dfn>.
           </td>
         </tr>
         <tr>
@@ -28919,7 +28919,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>The documents herein organize all base information relevant to Launch Agent 1's usage of the First Loss Capital Rental Primitive.</td>
+          <td>The documents herein organize all base information relevant to Launch Agent 1's usage of the Junior Risk Capital Rental Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -28935,7 +28935,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>This document contains a Directory of all Instances of the First Loss Capital Rental Primitive with Instance status of Active.</td>
+          <td>This document contains a Directory of all Instances of the Junior Risk Capital Rental Primitive with Instance status of Active.</td>
         </tr>
         <tr>
           <td>
@@ -28943,7 +28943,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>This document contains a Directory of all Instances of the First Loss Capital Rental Primitive with Instance status of Completed.</td>
+          <td>This document contains a Directory of all Instances of the Junior Risk Capital Rental Primitive with Instance status of Completed.</td>
         </tr>
         <tr>
           <td>
@@ -28952,7 +28952,7 @@
           <td>Launch Agent 1</td>
           <td>Core</td>
           <td>
-            This document contains a Directory of all prospective Instances of the First Loss Capital Rental Primitive whose Invocation is currently in progress. Invocations that are completed successfully are moved to <dfn>Active Instances Directory</dfn>, whereas failed Invocations are Archived in <dfn>Hub Data Repository</dfn>.
+            This document contains a Directory of all prospective Instances of the Junior Risk Capital Rental Primitive whose Invocation is currently in progress. Invocations that are completed successfully are moved to <dfn>Active Instances Directory</dfn>, whereas failed Invocations are Archived in <dfn>Hub Data Repository</dfn>.
           </td>
         </tr>
         <tr>
@@ -28969,7 +28969,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>The subtrees for archived Invocations and Instances of the First Loss Capital Rental Primitive are stored here.</td>
+          <td>The subtrees for archived Invocations and Instances of the Junior Risk Capital Rental Primitive are stored here.</td>
         </tr>
         <tr>
           <td>
@@ -28977,7 +28977,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>The subtrees for failed Invocations of the First Loss Capital Rental Primitive are stored here.</td>
+          <td>The subtrees for failed Invocations of the Junior Risk Capital Rental Primitive are stored here.</td>
         </tr>
         <tr>
           <td>
@@ -28985,7 +28985,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>The subtrees for Instances of the First Loss Capital Rental Primitive with Suspended Status are stored here.</td>
+          <td>The subtrees for Instances of the Junior Risk Capital Rental Primitive with Suspended Status are stored here.</td>
         </tr>
         <tr>
           <td>
@@ -28993,7 +28993,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>The Instances of the First Loss Capital Rental Primitive with Active Status are stored herein.</td>
+          <td>The Instances of the Junior Risk Capital Rental Primitive with Active Status are stored herein.</td>
         </tr>
         <tr>
           <td>
@@ -29001,7 +29001,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>The Instances of the First Loss Capital Rental Primitive with Completed Status are stored herein.</td>
+          <td>The Instances of the Junior Risk Capital Rental Primitive with Completed Status are stored herein.</td>
         </tr>
         <tr>
           <td>
@@ -29010,7 +29010,7 @@
           <td>Launch Agent 1</td>
           <td>Core</td>
           <td>
-            The in progress Invocations of the First Loss Capital Rental Primitive are contained herein. Once an Invocation is successfully completed, its subtree will be moved to <dfn>Active Instances</dfn>.
+            The in progress Invocations of the Junior Risk Capital Rental Primitive are contained herein. Once an Invocation is successfully completed, its subtree will be moved to <dfn>Active Instances</dfn>.
           </td>
         </tr>
         <tr>
@@ -32792,7 +32792,7 @@
           <td>Launch Agent 2</td>
           <td>Core</td>
           <td>
-            The documents herein contain all data and specifications for Launch Agent 2's Instances of the First Loss Capital Rental Primitive. See <dfn>A.2.4 - First Loss Capital Rental Primitive</dfn>.
+            The documents herein contain all data and specifications for Launch Agent 2's Instances of the Junior Risk Capital Rental Primitive. See <dfn>A.2.4 - First Loss Capital Rental Primitive</dfn>.
           </td>
         </tr>
         <tr>
@@ -32801,7 +32801,7 @@
           </td>
           <td>Launch Agent 2</td>
           <td>Core</td>
-          <td>The documents herein organize all base information relevant to Launch Agent 2's usage of the First Loss Capital Rental Primitive.</td>
+          <td>The documents herein organize all base information relevant to Launch Agent 2's usage of the Junior Risk Capital Rental Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -32817,7 +32817,7 @@
           </td>
           <td>Launch Agent 2</td>
           <td>Core</td>
-          <td>This document contains a Directory of all Instances of the First Loss Capital Rental Primitive with Instance status of Active.</td>
+          <td>This document contains a Directory of all Instances of the Junior Risk Capital Rental Primitive with Instance status of Active.</td>
         </tr>
         <tr>
           <td>
@@ -32825,7 +32825,7 @@
           </td>
           <td>Launch Agent 2</td>
           <td>Core</td>
-          <td>This document contains a Directory of all Instances of the First Loss Capital Rental Primitive with Instance status of Completed.</td>
+          <td>This document contains a Directory of all Instances of the Junior Risk Capital Rental Primitive with Instance status of Completed.</td>
         </tr>
         <tr>
           <td>
@@ -32834,7 +32834,7 @@
           <td>Launch Agent 2</td>
           <td>Core</td>
           <td>
-            This document contains a Directory of all prospective Instances of the First Loss Capital Rental Primitive whose Invocation is currently in progress. Invocations that are completed successfully are moved to <dfn>Active Instances</dfn>, whereas failed Invocations are Archived in <dfn>Hub Data Repository</dfn>.
+            This document contains a Directory of all prospective Instances of the Junior Risk Capital Rental Primitive whose Invocation is currently in progress. Invocations that are completed successfully are moved to <dfn>Active Instances</dfn>, whereas failed Invocations are Archived in <dfn>Hub Data Repository</dfn>.
           </td>
         </tr>
         <tr>
@@ -32851,7 +32851,7 @@
           </td>
           <td>Launch Agent 2</td>
           <td>Core</td>
-          <td>The subtrees for archived Invocations and Instances of the First Loss Capital Rental Primitive are stored here.</td>
+          <td>The subtrees for archived Invocations and Instances of the Junior Risk Capital Rental Primitive are stored here.</td>
         </tr>
         <tr>
           <td>
@@ -32859,7 +32859,7 @@
           </td>
           <td>Launch Agent 2</td>
           <td>Core</td>
-          <td>The subtrees for failed Invocations of the First Loss Capital Rental Primitive are stored here.</td>
+          <td>The subtrees for failed Invocations of the Junior Risk Capital Rental Primitive are stored here.</td>
         </tr>
         <tr>
           <td>
@@ -32867,7 +32867,7 @@
           </td>
           <td>Launch Agent 2</td>
           <td>Core</td>
-          <td>The subtrees for Instances of the First Loss Capital Rental Primitive with Suspended Status are stored here.</td>
+          <td>The subtrees for Instances of the Junior Risk Capital Rental Primitive with Suspended Status are stored here.</td>
         </tr>
         <tr>
           <td>
@@ -32875,7 +32875,7 @@
           </td>
           <td>Launch Agent 2</td>
           <td>Core</td>
-          <td>The Instances of the First Loss Capital Rental Primitive with Active Status are stored herein.</td>
+          <td>The Instances of the Junior Risk Capital Rental Primitive with Active Status are stored herein.</td>
         </tr>
         <tr>
           <td>
@@ -32883,7 +32883,7 @@
           </td>
           <td>Launch Agent 2</td>
           <td>Core</td>
-          <td>The Instances of the First Loss Capital Rental Primitive with Completed Status are stored herein.</td>
+          <td>The Instances of the Junior Risk Capital Rental Primitive with Completed Status are stored herein.</td>
         </tr>
         <tr>
           <td>
@@ -32892,7 +32892,7 @@
           <td>Launch Agent 2</td>
           <td>Core</td>
           <td>
-            The in progress Invocations of the First Loss Capital Rental Primitive are contained herein. Once an Invocation is successfully completed, its subtree will be moved to <dfn>Active Instances</dfn>.
+            The in progress Invocations of the Junior Risk Capital Rental Primitive are contained herein. Once an Invocation is successfully completed, its subtree will be moved to <dfn>Active Instances</dfn>.
           </td>
         </tr>
         <tr>
@@ -33864,7 +33864,7 @@
           <td>Launch Agent 3</td>
           <td>Core</td>
           <td>
-            Token emissions beyond the Genesis Supply are permanently disabled; this cannot be reverted by Launch Agent 3 Governance. Sky Governance retains the ability to revert where Launch Agent 3 is in violation of First Loss Capital requirements and emissions are required by the Risk Framework. See <dfn>A.3.3</dfn>.
+            Token emissions beyond the Genesis Supply are permanently disabled; this cannot be reverted by Launch Agent 3 Governance. Sky Governance retains the ability to revert where Launch Agent 3 is in violation of Risk Capital requirements and emissions are required by the Risk Framework. See <dfn>A.3.3</dfn>.
           </td>
         </tr>
         <tr>
@@ -37875,12 +37875,12 @@
         </tr>
         <tr>
           <td>
-            <dfn>First Loss Capital Rental Primitive</dfn>
+            <dfn>Junior Risk Capital Rental Primitive</dfn>
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
           <td>
-            The documents herein contain all data and specifications for Launch Agent 3's Instances of the First Loss Capital Rental Primitive. See <dfn>A.2.4 - First Loss Capital Rental Primitive</dfn>.
+            The documents herein contain all data and specifications for Launch Agent 3's Instances of the Junior Risk Capital Rental Primitive. See <dfn>A.2.4 - First Loss Capital Rental Primitive</dfn>.
           </td>
         </tr>
         <tr>
@@ -37889,7 +37889,7 @@
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
-          <td>The documents herein organize all base information relevant to Launch Agent 3's usage of the First Loss Capital Rental Primitive.</td>
+          <td>The documents herein organize all base information relevant to Launch Agent 3's usage of the Junior Risk Capital Rental Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -37905,7 +37905,7 @@
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
-          <td>This document contains a Directory of all Instances of the First Loss Capital Rental Primitive with Instance status of Active.</td>
+          <td>This document contains a Directory of all Instances of the Junior Risk Capital Rental Primitive with Instance status of Active.</td>
         </tr>
         <tr>
           <td>
@@ -37913,7 +37913,7 @@
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
-          <td>This document contains a Directory of all Instances of the First Loss Capital Rental Primitive with Instance status of Completed.</td>
+          <td>This document contains a Directory of all Instances of the Junior Risk Capital Rental Primitive with Instance status of Completed.</td>
         </tr>
         <tr>
           <td>
@@ -37922,7 +37922,7 @@
           <td>Launch Agent 3</td>
           <td>Core</td>
           <td>
-            This document contains a Directory of all prospective Instances of the First Loss Capital Rental Primitive whose Invocation is currently in progress. Invocations that are completed successfully are moved to <dfn>Active Instances Directory</dfn>, whereas failed Invocations are Archived in <dfn>Hub Data Repository</dfn>.
+            This document contains a Directory of all prospective Instances of the Junior Risk Capital Rental Primitive whose Invocation is currently in progress. Invocations that are completed successfully are moved to <dfn>Active Instances Directory</dfn>, whereas failed Invocations are Archived in <dfn>Hub Data Repository</dfn>.
           </td>
         </tr>
         <tr>
@@ -37939,7 +37939,7 @@
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
-          <td>The subtrees for archived Invocations and Instances of the First Loss Capital Rental Primitive are stored here.</td>
+          <td>The subtrees for archived Invocations and Instances of the Junior Risk Capital Rental Primitive are stored here.</td>
         </tr>
         <tr>
           <td>
@@ -37947,7 +37947,7 @@
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
-          <td>The subtrees for failed Invocations of the First Loss Capital Rental Primitive are stored here.</td>
+          <td>The subtrees for failed Invocations of the Junior Risk Capital Rental Primitive are stored here.</td>
         </tr>
         <tr>
           <td>
@@ -37955,7 +37955,7 @@
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
-          <td>The subtrees for Instances of the First Loss Capital Rental Primitive with Suspended Status are stored here.</td>
+          <td>The subtrees for Instances of the Junior Risk Capital Rental Primitive with Suspended Status are stored here.</td>
         </tr>
         <tr>
           <td>
@@ -37963,7 +37963,7 @@
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
-          <td>The Instances of the First Loss Capital Rental Primitive with Active Status are stored herein.</td>
+          <td>The Instances of the Junior Risk Capital Rental Primitive with Active Status are stored herein.</td>
         </tr>
         <tr>
           <td>
@@ -37971,7 +37971,7 @@
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
-          <td>The Instances of the First Loss Capital Rental Primitive with Completed Status are stored herein.</td>
+          <td>The Instances of the Junior Risk Capital Rental Primitive with Completed Status are stored herein.</td>
         </tr>
         <tr>
           <td>
@@ -37980,7 +37980,7 @@
           <td>Launch Agent 3</td>
           <td>Core</td>
           <td>
-            The in progress Invocations of the First Loss Capital Rental Primitive are contained herein. Once an Invocation is successfully completed, its subtree will be moved to <dfn>Active Instances</dfn>.
+            The in progress Invocations of the Junior Risk Capital Rental Primitive are contained herein. Once an Invocation is successfully completed, its subtree will be moved to <dfn>Active Instances</dfn>.
           </td>
         </tr>
         <tr>
