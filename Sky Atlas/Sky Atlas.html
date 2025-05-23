@@ -10295,240 +10295,255 @@
           <td>Section</td>
           <td>Supply Side Stablecoin Primitives are Sky Primitives focused on capital allocation and risk management.</td>
         </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Allocation System Primitive</dfn>
-          </td>
-          <td>Allocation System Primitive</td>
-          <td>Core</td>
-          <td>The Allocation System Primitive is the base mechanism that enables Star Agents to put up Risk Capital to deploy USDS collateral into different opportunities that provide risk-adjusted return, by borrowing at the Base Rate from Sky, and following Asset Liability Management restrictions on the liquidity of deployed assets.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Allocation System Process Definition</dfn>
-          </td>
-          <td>Allocation System Process Definition</td>
-          <td>Core</td>
-          <td>The documents herein define the process for initial setup and ongoing management of an Allocation Conduit as part of the Allocation System Primitive.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Allocation Conduit Setup Process Definition</dfn>
-          </td>
-          <td>Allocation Conduit Setup Process Definition</td>
-          <td>Core</td>
-          <td>The documents herein define the process for setting up an Allocation Conduit as part of the Allocation System Primitive.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Allocation Conduit Setup Real World Agreements And Planning</dfn>
-          </td>
-          <td>Allocation Conduit Setup Real World Agreements And Planning</td>
-          <td>Core</td>
-          <td>The documents herein define the preliminary, off-chain human coordination stage of setting up an Allocation Conduit.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Allocation Conduit Setup Initial Concept And Feasibility Discussions</dfn>
-          </td>
-          <td>Allocation Conduit Setup Initial Concept And Feasibility Discussions</td>
-          <td>Core</td>
-          <td>The Star Agent identifies a yield opportunity on a target chain that can exceed the Base Rate. The Star Agent estimates Risk Capital and Asset Liability Management requirements associated with the the opportunity and evaluates options for fulfilling them. The Star Agent also considers exchange and bridging costs, if applicable. Based on this, the Star Agent develops a net yield target for the opportunity factoring in all of these costs. The output of this step is an internal meeting note summarizing the idea as well as estimates of Risk Capital, Asset Liability Management, and exchange / bridging costs.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Allocation Conduit Setup Preliminary Risk Capital and Asset Liability Management Arrangement</dfn>
-          </td>
-          <td>Allocation Conduit Setup Preliminary Risk Capital and Asset Liability Management Arrangement</td>
-          <td>Core</td>
-          <td>If necessary, the Star Agent reaches out to other Star Agents that could provide Junior Risk Capital or assume Asset Liability Management obligations. The Star Agent negotiates with these other Star Agents and documents these potential deals. The output of this step is an informal confirmation of Junior Risk Capital and Asset Liability Management transfer details and draft references for the upcoming Star Agent Artifact update.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Allocation Conduit Setup Preliminary Informal Check With Operational GovOps</dfn>
-          </td>
-          <td>Allocation Conduit Setup Preliminary Informal Check With Operational GovOps</td>
-          <td>Core</td>
-          <td>The Star Agent presents the plan for the Allocation Conduit to Operational GovOps, including any associated Risk Capital and Asset Liability Management arrangements. Operational GovOps reviews and either provides an informal greenlight or requests modifications. The output of this step is approval to proceed with revision requests, if needed.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Allocation Conduit Setup Codification and Validation</dfn>
-          </td>
-          <td>Allocation Conduit Setup Codification and Validation</td>
-          <td>Core</td>
-          <td>The documents herein define how agreements to set up an Allocation Conduit are codified and validated in the Powerhouse system and how governance votes happen.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Agent Inputs</dfn>
-          </td>
-          <td>Agent Inputs</td>
-          <td>Core</td>
-          <td>
-            The Star Agent drafts an update to the Star Agent Artifact adding the Allocation Conduit to the list of active Allocation Conduits and including the information specified in <dfn>A.2.4 - List Of Allocation Conduits</dfn>. The Star Agent submits the draft to the Powerhouse system. The output of this step is a draft Star Agent Artifact update in the Powerhouse system.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Validation And Off-Chain Vote</dfn>
-          </td>
-          <td>Validation And Off-Chain Vote</td>
-          <td>Core</td>
-          <td>The Operational Executor Facilitator reviews the proposal to ensure that it is complete and aligned with the Atlas. The Operational Executor Facilitator then initiates an off-chain snapshot vote, following the quorum and majority rules in the Star Agent Artifact. When complete, the result of the vote is recorded in the Powerhouse system. The output of this step is the snapshot vote result recorded in the Powerhouse system.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Official Update of Artifact</dfn>
-          </td>
-          <td>Official Update of Artifact</td>
-          <td>Core</td>
-          <td>If the Allocation Conduit is successfully approved, the Operational Executor Facilitator finalizes and publishes the update to the Star Agent Artifact, making it effective in the Atlas. The output of this step is an updated Star Agent Artifact with the new Allocation Conduit.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Allocation Conduit Setup Deployment</dfn>
-          </td>
-          <td>Allocation Conduit Setup Deployment</td>
-          <td>Core</td>
-          <td>The documents herein define how the deployment of an Allocation Conduit is executed on-chain.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Allocation Conduit Setup Conduit Development And Testing</dfn>
-          </td>
-          <td>Allocation Conduit Setup Conduit Development And Testing</td>
-          <td>Core</td>
-          <td>Once formally validated, the Star Agent implements the new Allocation Conduit based on the specifications in the Star Agent Artifact. Operational GovOps must test the Allocation Conduit with minimal funds from the Star Agent's Central Allocation Buffer, verifying deposit / withdrawal logic, slippage constraints, and oracle checks. If this testing is successful Operational GovOps confirms that the Allocation Conduit satisfies all risk constraints specified in the Star Agent Artifact. The output of this step is validated contracts for the Allocation Conduit and a green light to proceed with a scaled deployment.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Allocation Conduit Setup Initial Deployment and Risk Capital / Asset Liability Management Execution</dfn>
-          </td>
-          <td>Allocation Conduit Setup Initial Deployment and Risk Capital / Asset Liability Management Execution</td>
-          <td>Core</td>
-          <td>The Star Agent finalizes Risk Capital and Asset Liability Management Arrangements. Operational GovOps records these arrangements in the Powerhouse interface. Operational GovOps deploys funds from the Star Agent's Operational Buffer into the Allocation Conduit, performing any necessary DEX exchanges. In doing so, Operational GovOps follows instructions in the Agent Artifact regarding the amount of capital to deploy and slippage tolerances. The output of this step is a fully deployed Allocation Conduit conforming to Junior Risk Capital and Asset Liability Management requirements.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Allocation Conduit Ongoing Management</dfn>
-          </td>
-          <td>Allocation Conduit Ongoing Management</td>
-          <td>Core</td>
-          <td>The documents herein define the process for managing an Allocation Conduit as part of the Allocation System Primitive</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Allocation Conduit Management Periodic Data Submission And Validation</dfn>
-          </td>
-          <td>Allocation Conduit Management Periodic Data Submission And Validation</td>
-          <td>Core</td>
-          <td>At specified intervals, data providers submit yield, exchange rate, Risk Capital, and Asset Liability Management data as specified in the data submission protocol for the Allocation Conduit in the Star Agent Artifact. Operational GovOps cross-checks the data submitted against on-chain and off-chain for consistency. If the Allocation Conduit is significantly underperforming or there are violations of Risk Capital or Asset Liability Management requirements, Operational GovOps must initiate escalation steps as defined in the Star Agent Artifact.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Allocation Conduit Management Adjustments, Scaling, And Settlement</dfn>
-          </td>
-          <td>Allocation Conduit Management Adjustments, Scaling, And Settlement</td>
-          <td>Core</td>
-          <td>On an ongoing basis, Operational GovOps operates the Allocation Conduit, scaling exposure up and down in accordance with the strategy specified in the Star Agent Artifact. Any change to the Allocation Conduit outside of the limits specified in the Star Agent Artifact or requiring judgment on the part of Operational GovOps requires a new vote of Star Agent token holders. As part of monthly and quarterly settlement cycles, Core GovOps reviews yields and obligations, applying penalties retroactively for any previously undisclosed violations. In the event of any such violations, Operational GovOps may be required to take escalatory steps based on the fallback strategy in the Star Agent Artifact.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Allocation System Input Requirements</dfn>
-          </td>
-          <td>Allocation System Input Requirements</td>
-          <td>Core</td>
-          <td>The documents herein define the required inputs for a valid Invocation of the Allocation System Primitive. If any input is noncompliant or omitted, the Primitive will be invalidated and the Allocation Conduit deployment will not move forward.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Global Activation Status</dfn>
-          </td>
-          <td>Global Activation Status</td>
-          <td>Core</td>
-          <td>The Allocation System Primitive must be Globally Activated.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Core Allocation Vault Address</dfn>
-          </td>
-          <td>Core Allocation Vault Address</td>
-          <td>Core</td>
-          <td>The Star Agent Artifact must specify the address of the Star Agent's Core Allocation Vault.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Core Allocation Buffer Address</dfn>
-          </td>
-          <td>Core Allocation Buffer Address</td>
-          <td>Core</td>
-          <td>The Star Agent Artifact must specify the address of the Star Agent's Core Allocation Buffer.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Allocation System Core Security Parameters</dfn>
-          </td>
-          <td>Allocation System Core Security Parameters</td>
-          <td>Core</td>
-          <td>The Star Agent Artifact must specify the rate limiters for the Allocation Vault and Core Allocation Buffer, including the address and parameters for each.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Capital Faucet</dfn>
-          </td>
-          <td>Capital Faucet</td>
-          <td>Core</td>
-          <td>The Star Agent Artifact must specify the address of the Star Agent's Capital Faucet and its rate limits.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - List Of Allocation Conduits</dfn>
-          </td>
-          <td>List Of Allocation Conduits</td>
-          <td>Core</td>
-          <td>If the Allocation System Primitive is Activated, then the Star Agent Artifact must list each active Allocation Conduit, grouped by blockchain. For each blockchain, the Star Agent Artifact must specify: (1) the name of the blockchain, (2) the bridging mechanism for the blockchain, if any, (3) the allocation buffer on the blockchain, and (4) the Allocation Conduits on the blockchain. For each Allocation Conduit, the Star Agent Artifact must contain the information specified herein.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Required Allocation Conduit Parameters</dfn>
-          </td>
-          <td>Required Allocation Conduit Parameters</td>
-          <td>Core</td>
-          <td>For each Allocation Conduit, the Star Agent Artifact must specify: (1) the name of the Allocation Conduit, (2) the address of the Allocation Conduit, (3) the rate limit of the conduit for inflows and outflows, (4) any other technical parameters of the Allocation Conduit (e.g. maximum slippage, oracles used), (5) data submission protocols, and (6) specification of emergency measures that can be used by Operational GovOps if Risk Capital or Asset Liability Management obligations are breached.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Required Allocation Conduit Strategy</dfn>
-          </td>
-          <td>Required Allocation Conduit Strategy</td>
-          <td>Core</td>
-          <td>For each Allocation Conduit, the Star Agent Artifact must specify the strategy documents contained herein. These strategy documents must describe in detail how the Allocation Conduit should be operated so that the Operational Executor Agent that the Star Agent has contracted with can operate the Allocation Conduit without further input from the Star Agent or having to make "judgment calls". To the extent that the Star Agent's strategy cuts across different Allocation Conduits, the Star Agent may include a single set of strategy documents covering all Allocation Conduits.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Required Allocation Conduit Allocation Strategy</dfn>
-          </td>
-          <td>Required Allocation Conduit Allocation Strategy</td>
-          <td>Core</td>
-          <td>The allocation strategy for each Allocation Conduit should specify how Operational GovOps should adjust the amount of funds allocated to the Conduit based on performance, market conditions, or other factors. It should also specify limits to the amount by which the allocation can be adjusted before a vote of Star Agent token holders is required.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Required Allocation Conduit Asset Liability Management Strategy</dfn>
-          </td>
-          <td>Required Allocation Conduit Asset Liability Management Strategy</td>
-          <td>Core</td>
-          <td>The asset liability management strategy for each Allocation Conduit must specify what steps Operational GovOps should take to ensure that the Star Agent continues to satisfy its Asset Liability Management obligations as the amount of funds allocated to the Conduit changes.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.2.4 - Required Allocation Conduit Fallback Strategy</dfn>
-          </td>
-          <td>Required Allocation Conduit Fallback Strategy</td>
-          <td>Core</td>
-          <td>The fallback strategy for each Allocation Conduit must specify how Operational GovOps should determine when an emergency situation is occurring regarding the Allocation Conduit and what actions it should take to protect the Star Agent from losses associated with the Allocation Conduit. The fallback strategy must include emergency measures for Operational GovOps to reduce exposure to, drain, and ultimately shut down the Allocation Conduit if Risk Capital or Asset Liability Management obligations are breached.</td>
-        </tr>
+        <td>
+          <dfn>A.2.4 - Allocation System Primitive</dfn>
+        </td>
+        <td>Allocation System Primitive</td>
+        <td>Core</td>
+        <td>The Allocation System Primitive is the base mechanism that enables Star Agents to put up First Loss Capital to deploy USDS collateral into different opportunities that provide risk-adjusted return, by borrowing at the Base Rate from Sky, and following Asset Liability Management restrictions on the liquidity of deployed assets.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Allocation System Process Definition</dfn>
+        </td>
+        <td>Allocation System Process Definition</td>
+        <td>Core</td>
+        <td>The documents herein define the process for initial setup and ongoing management of an Allocation Conduit as part of the Allocation System Primitive.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Allocation Conduit Setup Process Definition</dfn>
+        </td>
+        <td>Allocation Conduit Setup Process Definition</td>
+        <td>Core</td>
+        <td>The documents herein define the process for setting up an Allocation Conduit as part of the Allocation System Primitive.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Allocation Conduit Setup Real World Agreements And Planning</dfn>
+        </td>
+        <td>Allocation Conduit Setup Real World Agreements And Planning</td>
+        <td>Core</td>
+        <td>The documents herein define the preliminary, off-chain human coordination stage of setting up an Allocation Conduit.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Allocation Conduit Setup Initial Concept And Feasibility Discussions</dfn>
+        </td>
+        <td>Allocation Conduit Setup Initial Concept And Feasibility Discussions</td>
+        <td>Core</td>
+        <td>The Star Agent identifies a yield opportunity on a target chain that can exceed the Base Rate. The Star Agent estimates First Loss Capital and Asset Liability Management requirements associated with the the opportunity and evaluates options for fulfilling them. The Star Agent also considers exchange and bridging costs, if applicable. Based on this, the Star Agent develops a net yield target for the opportunity factoring in all of these costs. The output of this step is an internal meeting note summarizing the idea as well as estimates of First Loss Capital, Asset Liability Management, and exchange / bridging costs.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Allocation Conduit Setup Preliminary First Loss Capital and Asset Liability Management Arrangement</dfn>
+        </td>
+        <td>Allocation Conduit Setup Preliminary First Loss Capital and Asset Liability Management Arrangement</td>
+        <td>Core</td>
+        <td>If necessary, the Star Agent reaches out to other Star Agents that could provide First Loss Capital or assume Asset Liability Management obligations. The Star Agent negotiates with these other Star Agents and documents these potential deals. The output of this step is an informal confirmation of First Loss Capital and Asset Liability Management transfer details and draft references for the upcoming Star Agent Artifact update.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Allocation Conduit Setup Preliminary Informal Check With Operational GovOps</dfn>
+        </td>
+        <td>Allocation Conduit Setup Preliminary Informal Check With Operational GovOps</td>
+        <td>Core</td>
+        <td>The Star Agent presents the plan for the Allocation Conduit to Operational GovOps, including any associated First Loss Capital and Asset Liability Management arrangements. Operational GovOps reviews and either provides an informal greenlight or requests modifications. The output of this step is approval to proceed with revision requests, if needed.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Allocation Conduit Setup Codification and Validation</dfn>
+        </td>
+        <td>Allocation Conduit Setup Codification and Validation</td>
+        <td>Core</td>
+        <td>The documents herein define how agreements to set up an Allocation Conduit are codified and validated in the Powerhouse system and how governance votes happen.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Agent Inputs</dfn>
+        </td>
+        <td>Agent Inputs</td>
+        <td>Core</td>
+        <td>
+          The Star Agent drafts an update to the Star Agent Artifact adding the Allocation Conduit to the list of active Allocation Conduits and including the information specified in <dfn>A.2.4 - List Of Allocation Conduits</dfn>. The Star Agent submits the draft to the Powerhouse system. The output of this step is a draft Star Agent Artifact update in the Powerhouse system.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Validation And Off-Chain Vote</dfn>
+        </td>
+        <td>Validation And Off-Chain Vote</td>
+        <td>Core</td>
+        <td>The Operational Executor Facilitator reviews the proposal to ensure that it is complete and aligned with the Atlas. The Operational Executor Facilitator then initiates an off-chain snapshot vote, following the quorum and majority rules in the Star Agent Artifact. When complete, the result of the vote is recorded in the Powerhouse system. The output of this step is the snapshot vote result recorded in the Powerhouse system.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Official Update of Artifact</dfn>
+        </td>
+        <td>Official Update of Artifact</td>
+        <td>Core</td>
+        <td>If the Allocation Conduit is successfully approved, the Operational Executor Facilitator finalizes and publishes the update to the Star Agent Artifact, making it effective in the Atlas. The output of this step is an updated Star Agent Artifact with the new Allocation Conduit.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Allocation Conduit Setup Deployment</dfn>
+        </td>
+        <td>Allocation Conduit Setup Deployment</td>
+        <td>Core</td>
+        <td>The documents herein define how the deployment of an Allocation Conduit is executed on-chain.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Allocation Conduit Setup Conduit Development And Testing</dfn>
+        </td>
+        <td>Allocation Conduit Setup Conduit Development And Testing</td>
+        <td>Core</td>
+        <td>Once formally validated, the Star Agent implements the new Allocation Conduit based on the specifications in the Star Agent Artifact. Operational GovOps must test the Allocation Conduit with minimal funds from the Star Agent's Central Allocation Buffer, verifying deposit / withdrawal logic, slippage constraints, and oracle checks. If this testing is successful Operational GovOps confirms that the Allocation Conduit satisfies all risk constraints specified in the Star Agent Artifact. The output of this step is validated contracts for the Allocation Conduit and a green light to proceed with a scaled deployment.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Allocation Conduit Setup Initial Deployment and First Loss Capital / Asset Liability Management Execution</dfn>
+        </td>
+        <td>Allocation Conduit Setup Initial Deployment and First Loss Capital / Asset Liability Management Execution</td>
+        <td>Core</td>
+        <td>The Star Agent finalizes First Loss Capital and Asset Liability Management Arrangements. Operational GovOps records these arrangements in the Powerhouse interface. Operational GovOps deploys funds from the Star Agent's Operational Buffer into the Allocation Conduit, performing any necessary DEX exchanges. In doing so, Operational GovOps follows instructions in the Agent Artifact regarding the amount of capital to deploy and slippage tolerances. The output of this step is a fully deployed Allocation Conduit conforming to First Loss Capital and Asset Liability Management requirements.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Allocation Conduit Ongoing Management</dfn>
+        </td>
+        <td>Allocation Conduit Ongoing Management</td>
+        <td>Core</td>
+        <td>The documents herein define the process for managing an Allocation Conduit as part of the Allocation System Primitive</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Allocation Conduit Management Periodic Data Submission And Validation</dfn>
+        </td>
+        <td>Allocation Conduit Management Periodic Data Submission And Validation</td>
+        <td>Core</td>
+        <td>At specified intervals, data providers submit yield, exchange rate, First Loss Capital, and Asset Liability Management data as specified in the data submission protocol for the Allocation Conduit in the Star Agent Artifact. Operational GovOps cross-checks the data submitted against on-chain and off-chain for consistency. If the Allocation Conduit is significantly underperforming or there are violations of First Loss Capital or Asset Liability Management requirements, Operational GovOps must initiate escalation steps as defined in the Star Agent Artifact.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Allocation Conduit Management Adjustments, Scaling, And Settlement</dfn>
+        </td>
+        <td>Allocation Conduit Management Adjustments, Scaling, And Settlement</td>
+        <td>Core</td>
+        <td>On an ongoing basis, Operational GovOps operates the Allocation Conduit, scaling exposure up and down in accordance with the strategy specified in the Star Agent Artifact. Any change to the Allocation Conduit outside of the limits specified in the Star Agent Artifact or requiring judgment on the part of Operational GovOps requires a new vote of Star Agent token holders. As part of monthly and quarterly settlement cycles, Core GovOps reviews yields and obligations, applying penalties retroactively for any previously undisclosed violations. In the event of any such violations, Operational GovOps may be required to take escalatory steps based on the fallback strategy in the Star Agent Artifact.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Allocation System Input Requirements</dfn>
+        </td>
+        <td>Allocation System Input Requirements</td>
+        <td>Core</td>
+        <td>The documents herein define the required inputs for a valid Invocation of the Allocation System Primitive. If any input is noncompliant or omitted, the Primitive will be invalidated and the Allocation Conduit deployment will not move forward.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Global Activation Status</dfn>
+        </td>
+        <td>Global Activation Status</td>
+        <td>Core</td>
+        <td>The Allocation System Primitive must be Globally Activated.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Core Allocation Vault Address</dfn>
+        </td>
+        <td>Core Allocation Vault Address</td>
+        <td>Core</td>
+        <td>The Star Agent Artifact must specify the address of the Star Agent's Core Allocation Vault.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Core Allocation Buffer Address</dfn>
+        </td>
+        <td>Core Allocation Buffer Address</td>
+        <td>Core</td>
+        <td>The Star Agent Artifact must specify the address of the Star Agent's Core Allocation Buffer.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Allocation System Core Security Parameters</dfn>
+        </td>
+        <td>Allocation System Core Security Parameters</td>
+        <td>Core</td>
+        <td>The Star Agent Artifact must specify the rate limiters for the Allocation Vault and Core Allocation Buffer, including the address and parameters for each.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Capital Faucet</dfn>
+        </td>
+        <td>Capital Faucet</td>
+        <td>Core</td>
+        <td>The Star Agent Artifact must specify the address of the Star Agent's Capital Faucet and its rate limits.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - List Of Allocation Conduits</dfn>
+        </td>
+        <td>List Of Allocation Conduits</td>
+        <td>Core</td>
+        <td>If the Allocation System Primitive is Activated, then the Star Agent Artifact must list each active Allocation Conduit, grouped by blockchain. For each blockchain, the Star Agent Artifact must specify: (1) the name of the blockchain, (2) the bridging mechanism for the blockchain, if any, (3) the allocation buffer on the blockchain, and (4) the Allocation Conduits on the blockchain. For each Allocation Conduit, the Star Agent Artifact must contain the information specified herein.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Required Allocation Conduit Parameters</dfn>
+        </td>
+        <td>Required Allocation Conduit Parameters</td>
+        <td>Core</td>
+        <td>For each Allocation Conduit, the Star Agent Artifact must specify: (1) the name of the Allocation Conduit, (2) the address of the Allocation Conduit, (3) the rate limit of the conduit for inflows and outflows, (4) any other technical parameters of the Allocation Conduit (e.g. maximum slippage, oracles used), (5) data submission protocols, and (6) specification of emergency measures that can be used by Operational GovOps if First Loss Capital or Asset Liability Management obligations are breached.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Required Allocation Conduit Strategy</dfn>
+        </td>
+        <td>Required Allocation Conduit Strategy</td>
+        <td>Core</td>
+        <td>For each Allocation Conduit, the Star Agent Artifact must specify the strategy documents contained herein. These strategy documents must describe in detail how the Allocation Conduit should be operated so that the Operational Executor Agent that the Star Agent has contracted with can operate the Allocation Conduit without further input from the Star Agent or having to make "judgment calls". To the extent that the Star Agent's strategy cuts across different Allocation Conduits, the Star Agent may include a single set of strategy documents covering all Allocation Conduits.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Required Allocation Conduit Allocation Strategy</dfn>
+        </td>
+        <td>Required Allocation Conduit Allocation Strategy</td>
+        <td>Core</td>
+        <td>The allocation strategy for each Allocation Conduit should specify how Operational GovOps should adjust the amount of funds allocated to the Conduit based on performance, market conditions, or other factors. It should also specify limits to the amount by which the allocation can be adjusted before a vote of Star Agent token holders is required.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Required Allocation Conduit Asset Liability Management Strategy</dfn>
+        </td>
+        <td>Required Allocation Conduit Asset Liability Management Strategy</td>
+        <td>Core</td>
+        <td>The asset liability management strategy for each Allocation Conduit must specify what steps Operational GovOps should take to ensure that the Star Agent continues to satisfy its Asset Liability Management obligations as the amount of funds allocated to the Conduit changes.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Required Allocation Conduit Fallback Strategy</dfn>
+        </td>
+        <td>Required Allocation Conduit Fallback Strategy</td>
+        <td>Core</td>
+        <td>The fallback strategy for each Allocation Conduit must specify how Operational GovOps should determine when an emergency situation is occurring regarding the Allocation Conduit and what actions it should take to protect the Star Agent from losses associated with the Allocation Conduit. The fallback strategy must include emergency measures for Operational GovOps to reduce exposure to, drain, and ultimately shut down the Allocation Conduit if First Loss Capital or Asset Liability Management obligations are breached.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - First Loss Capital Rental Primitive</dfn>
+        </td>
+        <td>First Loss Capital Rental Primitive</td>
+        <td>Core</td>
+        <td>The First Loss Capital Rental Primitive is a mechanism enabling Star Agents to rapidly rent First Loss Capital from each other, ensuring that capital gets deployed to where the best opportunities are.</td>
+      </tr>
+      <tr>
+        <td>
+          <dfn>A.2.4 - Actively Stabilizing Collateral Rental Primitive</dfn>
+        </td>
+        <td>Actively Stabilizing Collateral Rental Primitive</td>
+        <td>Core</td>
+        <td>The Actively Stabilizing Collateral Rental Primitive is a mechanism enabling Star Agents to trade Asset Liability Management obligations between each other, providing more flexibility in how capital is deployed through the Allocation System and reducing duplicate work.</td>
+      </tr>
         <tr>
           <td>
             <dfn>A.2.4 - Junior Risk Capital Rental Primitive</dfn>
