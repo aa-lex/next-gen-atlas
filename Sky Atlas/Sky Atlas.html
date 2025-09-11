@@ -599,14 +599,6 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.5.10</dfn>
-          </td>
-          <td>Core Simplification Buffer Budget</td>
-          <td>Article</td>
-          <td>This Article defines the Core Simplification Buffer Budget.</td>
-        </tr>
-        <tr>
-          <td>
             <dfn>A.6.1</dfn>
           </td>
           <td>Agent Artifacts</td>
@@ -938,6 +930,14 @@
           <td>Atlas Preamble - Definitions - Unrewarded USDS</td>
           <td>Core</td>
           <td>Unrewarded USDS are USDS balances that are not receiving the Sky Savings Rate, Integration Boost or USDS Token Rewards. USDS Token Rewards include both SKY and Agent token rewards.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.0.1 - Atlas Preamble - Definitions - Sky Forum</dfn>
+          </td>
+          <td>Atlas Preamble - Definitions - Sky Forum</td>
+          <td>Core</td>
+          <td>The Sky Forum serves as a dedicated platform for governance across the Sky Ecosystem. Community members submit proposals, engage in debate, and align on decisions. Posts are organized by category according to subject matter. For example, proposals or discussions concerning Sky Core must use the “Sky Core” category, while those pertaining to Primes must use the Prime category associated with the Agent. Authors should also apply relevant tags to improve discoverability and cross-referencing. The forum is located at <a href="https://forum.sky.money/">https://forum.sky.money/</a>.</td>
         </tr>
         <tr>
           <td>
@@ -2494,7 +2494,7 @@
           </td>
           <td>Sky Core Governance Security - Governance Security Delay Requirements - stUSDS Bounded External Access Module Exception</td>
           <td>Core</td>
-          <td><p>The stUSDS Bounded External Access Module (stUSDS BEAM) manages the parameters of the stUSDS system. Whitelisted operators can use the stUSDS BEAM to modify rates without waiting for the GSM Pause Delay. The stUSDS BEAM modifies stUSDS parameters within specified ranges. See <dfn>A.4.4 - stUSDS Bounded External Access Module</dfn>.</p><p>This functionality allows the Sky Protocol to update stUSDS parameters more quickly than waiting for the Governance and Spell Process execution and the GSM Pause Delay.</p><p>The risk opened up by this functionality is malicious action by whitelisted operators setting stUSDS parameters to undesirable values. This risk can be mitigated through the stUSDS BEAM parameters and the STUSDS_MOM.</p></td>
+          <td><p>The stUSDS Bounded External Access Module (stUSDS BEAM) manages the parameters of the stUSDS system. Whitelisted operators can use the stUSDS BEAM to modify certain parameters without waiting for the GSM Pause Delay. The stUSDS BEAM modifies stUSDS parameters within specified ranges. See <dfn>A.4.4 - stUSDS Bounded External Access Module</dfn>.</p><p>This functionality allows the Sky Protocol to update stUSDS parameters more quickly than waiting for the Governance and Spell Process execution and the GSM Pause Delay.</p><p>The risk opened up by this functionality is malicious action by whitelisted operators setting stUSDS parameters to undesirable values. This risk can be mitigated through the stUSDS BEAM parameters and the STUSDS_MOM.</p></td>
         </tr>
         <tr>
           <td>
@@ -6368,7 +6368,7 @@
           </td>
           <td>Near-Term Process</td>
           <td>Core</td>
-          <td>In the near term, DAOcraft calculates the Accessibility Reward on behalf of the Support Facilitators. The Accessibility Facilitators then pay the Accessibility Reward from the Accessibility Reward Controller Wallet located on the Ethereum Mainnet at <code>0x05f471262d15eeca4059dade070e5bed509a4e73</code> within seven (7) days of the end of every month. The balance of this wallet may be topped up to 3 million USDS. This funding is subject to an Exercutive Vote.</td>
+          <td>In the near term, Amatsu calculates the Accessibility Reward on behalf of the Support Facilitators. The Accessibility Facilitators then pay the Accessibility Reward from the Accessibility Reward Controller Wallet located on the Ethereum Mainnet at <code>0x05F471262d15EECA4059DadE070e5BEd509a4e73</code> within seven (7) days of the end of every month. The balance of this wallet may be topped up to 3 million USDS. This funding is subject to an Exercutive Vote.</td>
         </tr>
         <tr>
           <td>
@@ -7724,7 +7724,7 @@
           <td>Core</td>
           <td>In the short term, the Support Facilitators directly pay Integration Boost recipients from Integration Boost wallets. The balance of these wallets on the Ethereum Mainnet may be topped up to 3 million USDS, although the balance of Integration Boost wallets across blockchains may exceed that amount. The funding is subject to an Executive Vote. The addresses of these wallets are:
             <ul>
-              <li>Ethereum (ETH) - <code>0xd6891d1dffda6b0b1af3524018a1ee2e608785f7</code></li>
+              <li>Ethereum (ETH) - <code>0xD6891d1DFFDA6B0B1aF3524018a1eE2E608785F7</code></li>
               <li>Solana (SOL) - <code>7Gf8AqAtmYkkVhQbbJr18RxVUuoGjA8ZEw3Af4NauyaY</code></li>
               <li>Solana Hot Wallet - <code>BKT2JR5wRWsXQBxrht1LbbbKtgUkz3sJdaBY8UzgRJPL</code></li>
             </ul>
@@ -10274,277 +10274,477 @@
           </td>
           <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation</td>
           <td>Core</td>
-          <td>The initial implementation of the Monthly Settlement Cycle will occur in three stages as specified in the documents herein. This initial implementation of the Monthly Settlement Cycle does not include the Senior Risk Capital System, which is still being developed, and funds continue to be allocated through Executive Votes rather than the allocation steps of the Treasury Management Function. See <dfn>A.2.5 - Treasury Management - Treasury Management - Short Term Transitionary Measures</dfn>.</td>
+          <td>The documents herein define the initial implementation of the Monthly Settlement Cycle. This initial implementation of the Monthly Settlement Cycle does not include the Senior Risk Capital System, which is still being developed, and funds continue to be allocated through Executive Votes rather than the allocation steps of the Treasury Management Function. See <dfn>A.2.5 - Treasury Management - Treasury Management - Short Term Transitionary Measures</dfn>.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition</td>
+          <td>Core</td>
+          <td>The documents herein define the initial process for performing the Monthly Settlement Cycle. The calculations to be performed as part of the Monthly Settlement Cycle are defined in <dfn>A.2.6 - Implementation Stages</dfn>. This process definition specifies who performs the calculations and how funds are ultimately paid out.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Initial Calculation By Operational Executor Agent</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Initial Calculation By Operational Executor Agent</td>
+          <td>Core</td>
+          <td>Within five (5) calendar days of the end of each month, each Operational Executor Agent posts on the Sky Forum a calculation of the net amounts due to or from the Prime Agents that it has an Executor Accord with (the “Initial Calculation”). The Initial Calculation must be posted under the “Sky Core” category using the `monthly-settlement-cycle` tag and must contain reasonable supporting detail. The required contents of the Initial Calculation will be further specified in a future iteration of the Atlas.</td>
+        </tr>
+         <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Initial Calculation By Operational Executor Agent - Demand Side Stablecoin Primitive Recipients</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Initial Calculation By Operational Executor Agent - Demand Side Stablecoin Primitive Recipients</td>
+          <td>Core</td>
+          <td>For each Prime Agent, the Initial Calculation must specify whether payments with respect to Demand Side Stablecoin Primitives (see <dfn>A.2.4 - A8 - Demand Side Stablecoin Primitives</dfn>) have already been made by the Operational Executor Agent, and thus should be reimbursed to the Operational Executor Agent instead of being paid to the Prime Agent.</td>
+        </tr>
+         <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Independent Calculation By BA Labs On Behalf Of Core Council</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Independent Calculation By BA Labs On Behalf Of Core Council</td>
+          <td>Core</td>
+          <td>Within five (5) calendar days of the posting of each Initial Calculation, BA Labs, on behalf of the Core Council, replies to the Initial Calculation with their own independent calculation of the net amounts due to or from the Prime Agents covered by the Initial Calculation (the “Independent Calculation”). The Independent Calculation must specify whether each amount is an Agreed Amount or a Disputed Amount (<dfn>see A.2.6 - Allowed Deviation</dfn>) and contain reasonable supporting detail. The required contents of the Independent Calculation will be further specified in a future iteration of the Atlas.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Independent Calculation By BA Labs On Behalf Of Core Council - Agreed Amount</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Independent Calculation By BA Labs On Behalf Of Core Council - Agreed Amount</td>
+          <td>Core</td>
+          <td>The net amount due to or from a Prime Agent in an Initial Calculation is an Agreed Amount if the absolute value of the percentage difference between the amounts in the Initial Calculation and the Independent Calculation is less than or equal to the Allowed Deviation (see <dfn>A.2.6 - Allowed Deviation</dfn>). The net amount due to or from a Prime Agent in an Independent Calculation is also an Agreed Amount if there is no Initial Calculation (see <dfn>A.2.6 - Missing Initial Calculations</dfn>).</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Independent Calculation By BA Labs On Behalf Of Core Council - Disputed Amount</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Independent Calculation By BA Labs On Behalf Of Core Council - Disputed Amount</td>
+          <td>Core</td>
+          <td>The net amount due to or from a Prime Agent in an Initial Calculation is a Disputed Amount if it is not an Agreed Amount.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Independent Calculation By BA Labs On Behalf Of Core Council - Allowed Deviation</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Independent Calculation By BA Labs On Behalf Of Core Council - Allowed Deviation</td>
+          <td>Core</td>
+          <td>The Allowed Deviation is the maximum allowed deviation, on a percentage basis, between the net amount due to or from a Prime Agent in the Initial Calculation and Independent Calculation before resolution of these differences is required. It recognizes that if the Initial Calculation and Independent Calculation are truly developed independently then differences in methodology are likely to result in small deviations.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Independent Calculation By BA Labs On Behalf Of Core Council - Allowed Deviation - A.2.6 - Allowed Deviation Current Value</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Independent Calculation By BA Labs On Behalf Of Core Council - Allowed Deviation - A.2.6 - Allowed Deviation Current Value</td>
+          <td>Core</td>
+          <td>The current value of the Allowed Deviation is 1%.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Independent Calculation By BA Labs On Behalf Of Core Council - Missing Initial Calculations</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Independent Calculation By BA Labs On Behalf Of Core Council - Missing Initial Calculations</td>
+          <td>Core</td>
+          <td>If an Operational Executor Agent does not deliver the Initial Calculation as specified in <dfn>A.2.6 - Initial Calculation By Operational Executor Agent</dfn>, BA Labs must prepare an Independent Calculation with respect to the Prime Agents covered by such Initial Calculation within ten (10) calendar days of the end of each month. The Independent Calculation must be posted under the “Sky Core” category using the `monthly-settlement-cycle tag`, contain reasonable supporting detail, and specify that no Initial Calculation was posted by the Operational Executor Agent.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Resolution Of Differences By Core GovOps Atlas Axis</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Resolution Of Differences By Core GovOps Atlas Axis</td>
+          <td>Core</td>
+          <td><p>If there are any Disputed Amounts (see <dfn>A.2.6 - Disputed Amount</dfn>), then Core GovOps Atlas Axis must resolve them. Atlas Axis must work with the relevant Operational Executor Agent, relevant Prime Agents, and BA Labs to reach a mutually acceptable resolution and may consult other parties to the extent it deems advisable.</p><p>Core GovOps Atlas Axis makes the final decision in resolving differences between the Initial Calculation and the Independent Calculation (the “Final Calculation”). Atlas Axis must post the Final Calculation as a reply to the Independent Calculation within five (5) calendar days of the posting of an Independent Calculation that includes a Disputed Amount. The Final Calculation must specify the Final Amount and contain reasonable supporting detail. The required contents of the Final Calculation will be further specified in a future iteration of the Atlas.</p></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Resolution Of Differences By Core GovOps Atlas Axis - Final Amount</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Resolution Of Differences By Core GovOps Atlas Axis - Final Amount</td>
+          <td>Core</td>
+          <td>The net amount due to or from a Prime Agent in a Final Calculation is a Final Amount.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Resolution Of Differences By Core GovOps Atlas Axis - Disputes By Prime Agents</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Resolution Of Differences By Core GovOps Atlas Axis - Disputes By Prime Agents</td>
+          <td>Core</td>
+          <td><p>A Prime Agent may dispute the calculation of the net amount due to or from it (a “Dispute Notice”). The Dispute Notice must be posted as a reply to the Initial Calculation within five (5) calendar days of the posting of the Initial Calculation. The Dispute Notice must specify the errors in the Initial Calculation and the Prime’s own calculation of the net amount due to or from it. The required contents of the Dispute Notice will be further specified in a future iteration of the Atlas.</p><p>Core GovOps Atlas Axis may at its discretion resolve the differences between the calculations using the process specified in A.2.6 - Resolution Of Differences By Core GovOps Atlas Axis. Alternatively, Atlas Axis may elect to determine the correct amount and true up any differences in the next Monthly Settlement Cycle as specified in <dfn>A.2.6 - True Up In Subsequent Monthly Settlement Cycle</dfn>. In either case Atlas Axis must post its decision as a reply to the Dispute Notice.</p></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Settlement Through Sky Core Executive Vote</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Settlement Through Sky Core Executive Vote</td>
+          <td>Core</td>
+          <td>When all amounts due to or from Prime Agents are Agreed Amounts or Final Amounts then the Governance Facilitators, on behalf of the Core Council, must include payments of these amounts in the next Sky Core Executive Vote as specified herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Settlement Through Sky Core Executive Vote - Payment Of Net Amounts Due To Prime Agents</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Settlement Through Sky Core Executive Vote - Payment Of Net Amounts Due To Prime Agents</td>
+          <td>Core</td>
+          <td>Net amounts due to Prime Agents, excluding reimbursements made to Operational Executor Agents (see <dfn>A.2.6 - Reimbursement Of Payments Made By Operational Executor Agents</dfn>), are transferred from the Sky Surplus Buffer to the Prime SubProxy Account through an Executive Vote.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Settlement Through Sky Core Executive Vote - Collection Of Net Amounts Due From Prime Agents</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Settlement Through Sky Core Executive Vote - Collection Of Net Amounts Due From Prime Agents</td>
+          <td>Core</td>
+          <td>Net amounts due from Prime Agents, excluding reimbursements made to Operational Executor Agents (see <dfn>A.2.6 - Reimbursement Of Payments Made By Operational Executor Agents</dfn>) are transferred from the Prime to the Sky Surplus Buffer through a Prime Spell included in an Executive Vote.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Settlement Through Sky Core Executive Vote - Reimbursement Of Payments Made By Operational Executor Agents</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Settlement Through Sky Core Executive Vote - Reimbursement Of Payments Made By Operational Executor Agents</td>
+          <td>Core</td>
+          <td>Reimbursements of payments already made by the Operational Executor Agent with respect to Demand Side Stablecoin Primitives (see <dfn>A.2.4 - A8 - Demand Side Stablecoin Primitives</dfn>) are transferred to the Operational Executor Agent's Buffer through an Executive Vote.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Settlement Through Sky Core Executive Vote - Reimbursement Of Payments Made By Operational Executor Agents - Reimbursement To Accessibility Reward Wallet And Integration Boost Wallets</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Settlement Through Sky Core Executive Vote - Reimbursement Of Payments Made By Operational Executor Agents - Reimbursement To Accessibility Reward Wallet And Integration Boost Wallets</td>
+          <td>Core</td>
+          <td>On an interim basis, Accessibility Reward reimbursements may also be made to the Accessibility Reward Controller Wallet (see <dfn>A.2.4 - Near-Term Process</dfn>) at the request of an Operational Executor Agent. Similarly, Integration Boost reimbursements may also be made to the Integration Boost Wallet (see <dfn>A.2.4 - Near Term Process</dfn>) at the request of an Operational Executor Agent.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - True Up In Subsequent Monthly Settlement Cycle</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - True Up In Subsequent Monthly Settlement Cycle</td>
+          <td>Core</td>
+          <td><p>If the amounts of any payments included in the Sky Core Executive Vote (see <dfn>A.2.6 - Settlement Through Sky Core Executive Vote</dfn>) are subsequently determined to be incorrect, adjustments are included in the next Monthly Settlement Cycle to ensure that each party pays the amount it owes or receives the amount to which it is entitled.</p><p>Core GovOps Atlas Axis must prepare a statement specifying the errors, the correct amounts, and the adjustments needed (the “Correction Calculation”). The Correction Calculation must be posted to the Sky Forum under the “Sky Core” category with the `monthly-settlement-cycle` tag. The required contents of the Correction Calculation will be further specified in a future iteration of the Atlas.</p></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Interim Measures</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Interim Measures</td>
+          <td>Core</td>
+          <td>The documents herein define interim exceptions to the process definition for the Monthly Settlement Cycle.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Interim Measures - Scope Of September 2025 Monthly Settlement Cycle</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Interim Measures - Scope Of September 2025 Monthly Settlement Cycle</td>
+          <td>Core</td>
+          <td>The initial Monthly Settlement Cycle conducted in September 2025 will be for the two month period from July 1, 2025 to August 31, 2025.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Interim Measures - Process For September 2025 Monthly Settlement Cycle</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Process Definition - Interim Measures - Process For September 2025 Monthly Settlement Cycle</td>
+          <td>Core</td>
+          <td>For the initial Monthly Settlement Cycle conducted in September 2025, the Initial Calculation prepared by Operational Executor Agent Amatsu will only include calculations related to Demand Side Stablecoin Primitives (see <dfn>A.2.4 - A8 - Demand Side Stablecoin Primitives</dfn>). The Independent Calculation prepared by BA Labs on behalf of the Core Council will be prepared normally. The calculations related to Demand Side Stablecoin Primitives will be subject to the normal resolution process defined in <dfn>A.2.6 - Resolution Of Differences By Core GovOps Atlas Axis</dfn>. For all other calculations, the amounts in the Independent Calculation will be treated as Agreed Amounts. The Initial Calculation and the Independent Calculation will be posted to the Sky Forum by September 10, 2025.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages</td>
+          <td>Core</td>
+          <td>The initial implementation of the Monthly Settlement Cycle will occur in three stages as specified in the documents herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1</td>
           <td>Core</td>
           <td>The documents herein define Stage 1 of the implementation of the Monthly Settlement Cycle.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation</td>
           <td>Core</td>
           <td>In Stage 1 of the implementation of the Monthly Settlement Cycle, the net amount due from each Prime to Sky will be calculated using a Simplified Profit And Loss Calculation as specified in the documents herein.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Sky To Primes With Respect To Demand Side Primitives And Agent Rate</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Sky To Primes With Respect To Demand Side Primitives And Agent Rate</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Sky To Primes With Respect To Demand Side Primitives And Agent Rate</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Sky To Primes With Respect To Demand Side Primitives And Agent Rate</td>
           <td>Core</td>
           <td>The amount due from Sky to each Prime with respect to Demand Side Primitives and the Agent Rate is calculated as specified in the documents herein.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Sky To Primes With Respect To Demand Side Primitives And Agent Rate - Amount Due From Sky To Primes With Respect To Accessibility Reward</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Sky To Primes With Respect To Demand Side Primitives And Agent Rate - Amount Due From Sky To Primes With Respect To Accessibility Reward</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Sky To Primes With Respect To Demand Side Primitives And Agent Rate - Amount Due From Sky To Primes With Respect To Accessibility Reward</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Sky To Primes With Respect To Demand Side Primitives And Agent Rate - Amount Due From Sky To Primes With Respect To Accessibility Reward</td>
           <td>Core</td>
           <td>The amount due from Sky to a Prime in a month with respect to the Accessibility Reward is the amount earned by the Prime with respect to all USDS and sUSDS balances marked with the Prime's reward codes. See <dfn>A.2.4 - Accessibility Reward Primitive</dfn>. This includes any Bonus Accessibility Reward. See <dfn>A.2.10 - 2025 Bonus</dfn>.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Sky To Primes With Respect To Demand Side Primitives And Agent Rate - Amount Due From Sky To Primes With Respect To Agent Rate</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Sky To Primes With Respect To Demand Side Primitives And Agent Rate - Amount Due From Sky To Primes With Respect To Agent Rate</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Sky To Primes With Respect To Demand Side Primitives And Agent Rate - Amount Due From Sky To Primes With Respect To Agent Rate</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Sky To Primes With Respect To Demand Side Primitives And Agent Rate - Amount Due From Sky To Primes With Respect To Agent Rate</td>
           <td>Core</td>
           <td>The amount due from Sky to a Prime in a month with respect to the Agent Rate is calculated as specified in <dfn>A.3.2 - Core Stability Parameters - Parameters - Agent Rate</dfn>.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Sky To Primes With Respect To Demand Side Primitives And Agent Rate - Amount Due From Sky To Primes With Respect To Accessibility Reward And Agent Rate</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Sky To Primes With Respect To Demand Side Primitives And Agent Rate - Amount Due From Sky To Primes With Respect To Accessibility Reward And Agent Rate</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Sky To Primes With Respect To Demand Side Primitives And Agent Rate - Amount Due From Sky To Primes With Respect To Accessibility Reward And Agent Rate</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Sky To Primes With Respect To Demand Side Primitives And Agent Rate - Amount Due From Sky To Primes With Respect To Accessibility Reward And Agent Rate</td>
           <td>Core</td>
           <td>The amount due from Sky to a Prime in a month with respect to the Accessibility Reward and the Agent Rate is the sum of the amounts specified in <dfn>A.2.6 - Amount Due From Sky To Primes With Respect To Accessibility Reward</dfn> and <dfn>A.2.6 - Amount Due From Sky To Primes With Respect To Agent Rate</dfn>.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives</td>
           <td>Core</td>
           <td>The amount due from each Prime to Sky with respect to Supply Side Primitives is calculated as specified in the documents herein.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 1: Calculate Total Allocation System Revenue</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 1: Calculate Total Allocation System Revenue</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 1: Calculate Total Allocation System Revenue</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 1: Calculate Total Allocation System Revenue</td>
           <td>Core</td>
           <td>First, Total Allocation System Revenue is calculated for each Prime for the month. Total Allocation System Revenue for a Prime in a month is the sum of Instance Revenue for each Active Instance of the Allocation System Primitive that the Prime has deployed.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 1: Calculate Total Allocation System Revenue - Instance Revenue</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 1: Calculate Total Allocation System Revenue - Instance Revenue</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 1: Calculate Total Allocation System Revenue - Instance Revenue</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 1: Calculate Total Allocation System Revenue - Instance Revenue</td>
           <td>Core</td>
           <td>Instance Revenue for an Allocation System Instance for a month is all earnings from that Instance.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 2: Calculate Total Allocation System Profit</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 2: Calculate Total Allocation System Profit</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 2: Calculate Total Allocation System Profit</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 2: Calculate Total Allocation System Profit</td>
           <td>Core</td>
           <td>Second, Total Allocation System Profit is calculated for each Prime for the month. Total Allocation System Profit for a Prime in a month is the sum of Instance Profit for each Active Instance of the Allocation System Primitive that the Prime has deployed.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 2: Calculate Total Allocation System Profit - Instance Profit</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 2: Calculate Total Allocation System Profit - Instance Profit</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 2: Calculate Total Allocation System Profit - Instance Profit</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 2: Calculate Total Allocation System Profit - Instance Profit</td>
           <td>Core</td>
           <td>Instance Profit for an Allocation System Instance is equal to the greater of (1) Instance Revenue (see <dfn>A.2.6 - Instance Revenue</dfn>) minus Instance Expenses (see <dfn>A.2.6 - Instance Expense</dfn>) and (2) zero.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 2: Calculate Total Allocation System Profit - Instance Profit - Instance Expense</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 2: Calculate Total Allocation System Profit - Instance Profit - Instance Expense</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 2: Calculate Total Allocation System Profit - Instance Profit - Instance Expense</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 2: Calculate Total Allocation System Profit - Instance Profit - Instance Expense</td>
           <td>Core</td>
           <td>Instance Expense for an Allocation System Instance for a month is the interest expense on the funds from Sky's Collateral Portfolio invested in the Instance. It is calculated on a per block basis based on the amount invested from Sky's Collateral Portfolio and the Agent Credit Line Borrow Rate.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 3: Calculate Adjusted Allocation System Profit</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 3: Calculate Adjusted Allocation System Profit</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 3: Calculate Adjusted Allocation System Profit</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 3: Calculate Adjusted Allocation System Profit</td>
           <td>Core</td>
           <td>Third, Adjusted Allocation System Profit is calculated for each Prime for the month. Adjusted Allocation System Profit for a Prime in a month is Total Allocation System Profit minus the Distortion Penalty (see <dfn>A.2.6 - Distortion Penalty</dfn>) and the Low Yield Actively Stabilizing Collateral Penalty (see <dfn>A.2.6 - Low Yield Actively Stabilizing Collateral Penalty</dfn>).</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 3: Calculate Adjusted Allocation System Profit - Distortion Penalty</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 3: Calculate Adjusted Allocation System Profit - Distortion Penalty</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 3: Calculate Adjusted Allocation System Profit - Distortion Penalty</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 3: Calculate Adjusted Allocation System Profit - Distortion Penalty</td>
           <td>Core</td>
           <td><p>The Distortion Penalty is a discretionary penalty designed to mitigate the potential misalignment caused by the asymmetric nature of the Simplified Profit And Loss Calculation, where Primes earn profits on Allocation System Instances that earn more than the Agent Credit Line Borrow Rate but do not suffer losses when Instances earn less than the Agent Credit Line Borrow Rate.</p><p>The Core Council Executor Agents, in consultation with the Stability Facilitators and the Stability Scope Advisors, may assess a penalty of up to 100% of Total Allocation System Profit (see <dfn>A.2.6 - Step 2: Calculate Total Allocation System Profit</dfn>) if it determines that a Prime's decisions were distorted by this incentive structure.</p></td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 3: Calculate Adjusted Allocation System Profit - Low Yield Actively Stabilizing Collateral Penalty</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 3: Calculate Adjusted Allocation System Profit - Low Yield Actively Stabilizing Collateral Penalty</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 3: Calculate Adjusted Allocation System Profit - Low Yield Actively Stabilizing Collateral Penalty</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 3: Calculate Adjusted Allocation System Profit - Low Yield Actively Stabilizing Collateral Penalty</td>
           <td>Core</td>
           <td><p>The Low Yield Actively Stabilizing Collateral Penalty is a formulaic penalty designed to prevent Primes from holding excessive amounts of low yield Actively Stabilizing Collateral.</p><p>The penalty, as a percentage of the Total Allocation System Profit, is the lesser of (1) ten times the Excess Low Yield Actively Stabilizing Collateral Percentage and (2) 100%.</p></td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 3: Calculate Adjusted Allocation System Profit - Low Yield Actively Stabilizing Collateral Penalty - Excess Low Yield Actively Stabilizing Collateral Percentage</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 3: Calculate Adjusted Allocation System Profit - Low Yield Actively Stabilizing Collateral Penalty - Excess Low Yield Actively Stabilizing Collateral Percentage</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 3: Calculate Adjusted Allocation System Profit - Low Yield Actively Stabilizing Collateral Penalty - Excess Low Yield Actively Stabilizing Collateral Percentage</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 3: Calculate Adjusted Allocation System Profit - Low Yield Actively Stabilizing Collateral Penalty - Excess Low Yield Actively Stabilizing Collateral Percentage</td>
           <td>Core</td>
           <td>The Excess Low Yield Actively Stabilizing Collateral Percentage for a Prime is equal to the excess of (1) its Low Yield Actively Stabilizing Collateral (see A.2.6 - Low Yield Actively Stabilizing Collateral) as a percentage of its Collateral Portfolio above (2) its Minimum Actively Stabilizing Collateral (see <dfn>A.3.4 - Minimum Actively Stabilizing Collateral</dfn>) as a percentage of its Collateral Portfolio.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 3: Calculate Adjusted Allocation System Profit - Low Yield Actively Stabilizing Collateral Penalty - Excess Low Yield Actively Stabilizing Collateral Percentage - Low Yield Actively Stabilizing Collateral</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 3: Calculate Adjusted Allocation System Profit - Low Yield Actively Stabilizing Collateral Penalty - Excess Low Yield Actively Stabilizing Collateral Percentage - Low Yield Actively Stabilizing Collateral</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 3: Calculate Adjusted Allocation System Profit - Low Yield Actively Stabilizing Collateral Penalty - Excess Low Yield Actively Stabilizing Collateral Percentage - Low Yield Actively Stabilizing Collateral</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 3: Calculate Adjusted Allocation System Profit - Low Yield Actively Stabilizing Collateral Penalty - Excess Low Yield Actively Stabilizing Collateral Percentage - Low Yield Actively Stabilizing Collateral</td>
           <td>Core</td>
           <td>Low Yield Actively Stabilizing Collateral is Actively Stabilizing Collateral (see <dfn>A.3.4 - Actively Stabilizing Collateral</dfn>) that earns less than the Agent Credit Line Borrow Rate.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 4: Calculate Amount Due To Sky With Respect To Supply Side Primitives</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 4: Calculate Amount Due To Sky With Respect To Supply Side Primitives</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 4: Calculate Amount Due To Sky With Respect To Supply Side Primitives</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Amount Due From Primes To Sky With Respect To Supply Side Primitives - Step 4: Calculate Amount Due To Sky With Respect To Supply Side Primitives</td>
           <td>Core</td>
           <td>Fourth, the amount due to Sky with respect to Supply Side Primitives is calculated for each Prime for the month. The amount due to Sky with respect to Supply Side Primitives is Total Allocation System Revenue (see <dfn>A.2.6 - Step 1: Calculate Total Allocation System Revenue</dfn>) minus Adjusted Allocation System Profit (see <dfn>A.2.6 - Step 3: Calculate Adjusted Allocation System Profit</dfn>).</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Net Amount Due From Primes To Sky</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Net Amount Due From Primes To Sky</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Net Amount Due From Primes To Sky</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Net Amount Due From Primes To Sky</td>
           <td>Core</td>
-          <td><p>The net amount due from each Prime to Sky is the amount due from the Prime to Sky with respect to Supply Side Primitives (see <dfn>A.2.6 - Amount Due From Primes To Sky With Respect To Supply Side Primitives</dfn>) plus any amount due from the Prime to Sky with respect to the Token Launch Penalty (see <dfn>A.2.10 - Token Launch Penalty</dfn>) minus the amount due from Sky to the Prime with respect to Demand Side Primitives and the Agent Rate (see <dfn>A.2.6 - Amount Due From Sky To Primes With Respect To Demand Side Primitives And Agent Rate</dfn>).</p><p>Net amounts due from a Prime to Sky are transferred from the Prime's Treasury to the Surplus Buffer through a Prime Spell included in an Executive Vote. Net amounts due from Sky to a Prime are transferred from the Surplus Buffer to the Prime's Treasury through an Executive Vote.</p></td>
+          <td><p>The net amount due from each Prime to Sky is the amount due from the Prime to Sky with respect to Supply Side Primitives (see <dfn>A.2.6 - Amount Due From Primes To Sky With Respect To Supply Side Primitives</dfn>) plus any amount due from the Prime to Sky with respect to the Token Launch Penalty (see <dfn>A.2.10 - Token Launch Penalty</dfn>) minus the amount due from Sky to the Prime with respect to Demand Side Primitives and the Agent Rate (see <dfn>A.2.6 - Amount Due From Sky To Primes With Respect To Demand Side Primitives And Agent Rate</dfn>).</p><p>Net amounts due from a Prime to Sky are transferred from the Prime to the Surplus Buffer through a Prime Spell included in an Executive Vote. Net amounts due from Sky to a Prime are transferred from the Surplus Buffer to the Prime's Treasury through an Executive Vote.</p></td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Timing</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Exceptions</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Timing</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Exceptions</td>
+          <td>Core</td>
+          <td>The documents herein define exceptions to the Simplified Profit And Loss Calculation for specific assets held by certain Prime Agents.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Exceptions - USDT Held By Spark</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Exceptions - USDT Held By Spark</td>
+          <td>Core</td>
+          <td>Spark pays the Agent Credit Line Borrow Rate with respect to funds borrowed by Spark to invest in USDT and held in SparkLend. Spark thus realizes the full profit and loss associated with these investments.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Exceptions - pyUSD Held By Spark</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Simplified Profit And Loss Calculation - Exceptions - pyUSD Held By Spark</td>
+          <td>Core</td>
+          <td>Spark pays the Agent Credit Line Borrow Rate with respect to funds borrowed by Spark to invest in pyUSD and held in SparkLend or Spark's ALM Proxy. Spark thus realizes the full profit and loss associated with these investments.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Timing</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Timing</td>
           <td>Core</td>
           <td>Stage 1 is currently expected to be implemented in the August 21, 2025 Executive Vote for the period from July 1, 2025 to July 31, 2025.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Actions</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Actions</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Actions</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Actions</td>
           <td>Core</td>
           <td>The actions specified herein must be completed to achieve Stage 1 implementation of the Monthly Settlement Cycle.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Actions - Reduction Of Prime Allocator Vault Stability Fees</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Actions - Reduction Of Prime Allocator Vault Stability Fees</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Actions - Reduction Of Prime Allocator Vault Stability Fees</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Actions - Reduction Of Prime Allocator Vault Stability Fees</td>
           <td>Core</td>
           <td>The Stability Fees for each Prime Allocator Vault must be reduced to zero so that value is transferred from Primes to Sky Core exclusively through Executive Votes. The Core Council Executor Agents, in consultation with the Stability Facilitators and the Stability Scope Advisors, is directed to use the Stability Parameter Bounded External Access Module to reduce the Stability Fee for each Prime Allocator Vault to zero. See <dfn>A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Allocator Vault Parameters</dfn>.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Actions - Automation Of Simplified Profit And Loss Calculation</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Actions - Automation Of Simplified Profit And Loss Calculation</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 1 - Stage 1 Actions - Automation Of Simplified Profit And Loss Calculation</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 1 - Stage 1 Actions - Automation Of Simplified Profit And Loss Calculation</td>
           <td>Core</td>
           <td>The Stability Scope Advisors must develop tooling to allow the net amount due from each Prime to Sky each month under the Simplified Profit And Loss Calculation to be computed automatically.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 2</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 2</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 2</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 2</td>
           <td>Core</td>
           <td>The documents herein define Stage 2 of the implementation of the Monthly Settlement Cycle.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 2 - Stage 2 Virtual Base Rate</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 2 - Stage 2 Virtual Base Rate</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 2 - Stage 2 Virtual Base Rate</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 2 - Stage 2 Virtual Base Rate</td>
           <td>Core</td>
           <td>In Stage 2 of the implementation of the Monthly Settlement Cycle, the net amount due from each Prime to Sky is calculated as specified in the Atlas without the use of the Simplified Profit And Loss Calculation. However, interest under the Base Rate does not accrue in real time onchain and is instead calculated offchain and paid through Executive Votes as part of the Monthly Settlement Cycle. This is known as the Virtual Base Rate as these calculations occur offchain.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 2 - Stage 2 Timing</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 2 - Stage 2 Timing</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 2 - Stage 2 Timing</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 2 - Stage 2 Timing</td>
           <td>Core</td>
           <td>The timing for Stage 2 implementation of the Monthly Settlement Cycle will be specified in a future iteration of the Atlas.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 2 - Stage 2 Actions</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 2 - Stage 2 Actions</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 2 - Stage 2 Actions</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 2 - Stage 2 Actions</td>
           <td>Core</td>
           <td>The actions specified herein must be completed to achieve Stage 2 implementation of the Monthly Settlement Cycle.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 2 - Stage 2 Actions - Automation Of Monthly Settlement Cycle Calculation Including Virtual Base Rate</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 2 - Stage 2 Actions - Automation Of Monthly Settlement Cycle Calculation Including Virtual Base Rate</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 2 - Stage 2 Actions - Automation Of Monthly Settlement Cycle Calculation Including Virtual Base Rate</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 2 - Stage 2 Actions - Automation Of Monthly Settlement Cycle Calculation Including Virtual Base Rate</td>
           <td>Core</td>
           <td>The Stability Scope Advisors must develop automated tooling for calculating the net amount due from each Prime to Sky each month, incorporating the Virtual Base Rate.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 3</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 3</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 3</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 3</td>
           <td>Core</td>
           <td>The documents herein define Stage 3 of the implementation of the Monthly Settlement Cycle.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 3 - Stage 3 Onchain Base Rate</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 3 - Stage 3 Onchain Base Rate</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 3 - Stage 3 Onchain Base Rate</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 3 - Stage 3 Onchain Base Rate</td>
           <td>Core</td>
           <td>In Stage 3 of the implementation of the Monthly Settlement Cycle, the net amount due from each Prime to Sky is calculated as specified in the Atlas without the use of the Simplified Profit And Loss Calculation. In Stage 3, interest from the Base Rate accrues onchain to the Allocator Vault of each Prime. Thus, in Stage 3 Executive Votes are only required to pay down accrued interest on Allocator Vaults, as necessary, and settle other amounts due to and from Primes .</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 3 - Stage 3 Timing</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 3 - Stage 3 Timing</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 3 - Stage 3 Timing</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 3 - Stage 3 Timing</td>
           <td>Core</td>
           <td>The timing for Stage 3 implementation of the Monthly Settlement Cycle will be specified in a future iteration of the Atlas.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 3 - Stage 3 Actions</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 3 - Stage 3 Actions</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 3 - Stage 3 Actions</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 3 - Stage 3 Actions</td>
           <td>Core</td>
           <td>The actions specified herein must be completed to achieve Stage 3 implementation of the Monthly Settlement Cycle.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 3 - Stage 3 Actions - Integration Of Base Rate Into Allocator Vaults</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 3 - Stage 3 Actions - Integration Of Base Rate Into Allocator Vaults</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 3 - Stage 3 Actions - Integration Of Base Rate Into Allocator Vaults</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 3 - Stage 3 Actions - Integration Of Base Rate Into Allocator Vaults</td>
           <td>Core</td>
           <td>Allocator Vaults must be updated to accrue interest in real time based on the Base Rate.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 3 - Stage 3 Actions - Automation Of Monthly Settlement Cycle Based On Base Rate</dfn>
+            <dfn>A.2.6 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 3 - Stage 3 Actions - Automation Of Monthly Settlement Cycle Based On Base Rate</dfn>
           </td>
-          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Stage 3 - Stage 3 Actions - Automation Of Monthly Settlement Cycle Based On Base Rate</td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Implementation - Implementation Stages - Stage 3 - Stage 3 Actions - Automation Of Monthly Settlement Cycle Based On Base Rate</td>
           <td>Core</td>
           <td>The Stability Scope Advisors must update the tooling specified in <dfn>A.2.6 - Automation Of Monthly Settlement Cycle Calculation Including Virtual Base Rate</dfn> to reflect the onchain accrual of the Base Rate.</td>
         </tr>
@@ -16692,7 +16892,7 @@
           </td>
           <td>Surplus Buffer And Smart Burn Engine - Surplus Buffer - Current Implementation</td>
           <td>Core</td>
-          <td>The current implementation of the Surplus Buffer is the Vow contract deployed on the Ethereum Mainnet at <code>0xa950524441892a31ebddf91d3ceefa04bf454466</code>.</td>
+          <td>The current implementation of the Surplus Buffer is the Vow contract deployed on the Ethereum Mainnet at <code>0xA950524441892A31ebddF91d3cEEFa04Bf454466</code>.</td>
         </tr>
         <tr>
           <td>
@@ -16700,7 +16900,7 @@
           </td>
           <td>Surplus Buffer And Smart Burn Engine - Surplus Buffer - Current Value</td>
           <td>Core</td>
-          <td>The current value of the Surplus Buffer can be calculated using the Vat contract, Sky’s central accounting contract, located on the Ethereum Mainnet at <code>0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b</code>. The current value of the Surplus Buffer is the difference between:
+          <td>The current value of the Surplus Buffer can be calculated using the Vat contract, Sky’s central accounting contract, located on the Ethereum Mainnet at <code>0x35D1b3F3D7966A1DFe207aa4514C12a259A0492B</code>. The current value of the Surplus Buffer is the difference between:
             <ol>
               <li>The assets of the Vow contract obtained by calling the <code>dai</code> function on the Vat contract with the address of the Vow contract, and</li>
               <li>The liabilities of the Vow contract obtained by calling the <code>sin</code> function on the Vat contract with the address of the Vow contract.</li>
@@ -19116,7 +19316,7 @@
           </td>
           <td>SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - stUSDS Bounded External Access Module - Parameter Adjustments - Update Methodology</td>
           <td>Core</td>
-          <td>The documents herein define the methodology that should be used for determining when and how to update stUSDS parameters with the stUSDS BEAM. Initially when stUSDS parameters are set manually by the Operator Multisig (see <dfn>A.4.4 - Manual Parameter Updates By Operator Multisig</dfn>) the Stability Scope Advisors may deviate from these parameters in their best judgment. Once the process is fully automated (see <dfn>A.4.4 - Automatic Updates By Operator Hot Wallet</dfn>) the automated process must fully conform to the specifications herein.</td>
+          <td><p>The documents herein define the methodology that should be used for determining when and how to update stUSDS parameters with the stUSDS BEAM.</p><p>Initially when stUSDS parameters are set manually by the Operator Multisig (see <dfn>A.4.4 - Manual Parameter Updates By Operator Multisig</dfn>) the Stability Scope Advisors may deviate from these parameters in their best judgment. The Stability Scope Advisors should reduce the extent of these deviations over time to minimize the change when the process is fully automated.</p><p>Once the process is fully automated (see <dfn>A.4.4 - Automatic Updates By Operator Hot Wallet</dfn>) the automated process must fully conform to the specifications herein.</p></td>
         </tr>
         <tr>
           <td>
@@ -19733,22 +19933,6 @@
           <td>Core</td>
           <td>The Accessibility Facilitators must work with advisors and Ecosystem Actors to implement a liquidity bootstrapping program using up to 20 million USDS and 320 million SKY. These assets can be used for liquidity programs, or for liquidity infrastructure integration costs. Anything leftover from usage in liquidity programs must be returned to Sky control at the end of the bootstrapping program.<br>The funds can be paid into multisig accounts for future use via executive votes at will by the Accessibility Facilitators.
           </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.5.10 - A1 - Core Simplification Buffer Budget</dfn>
-          </td>
-          <td>Core Simplification Buffer Budget</td>
-          <td>Section</td>
-          <td>The Core Simplification Buffer Budget is a budget of 10,000,000 USDS and 70,000,000 SKY for certain expenses before those expenses are taken over by the Sky Entities, Agents, or other Ecosystem Actors.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.5.10 - Core Simplification Buffer Budget - Core Simplification Project Process Resolution</dfn>
-          </td>
-          <td>Core Simplification Buffer Budget - Core Simplification Project Process Resolution</td>
-          <td>Core</td>
-          <td>A one-time transfer of 8,000,000 USDS is hereby authorized to a wallet controlled by the Accessibility Facilitators. This must be the only transfer from the Core Simplification Buffer Budget and once this transfer has been made a subsequent Atlas Edit Proposal must be submitted to delete the Core Simplification Budget entirely.</td>
         </tr>
         <tr>
           <td>
@@ -21514,7 +21698,7 @@
             <a href="https://etherscan.io/verifySig/273394">https://etherscan.io/verifySig/273394</a> | <a
               href="https://forum.sky.money/t/wbc-aligned-delegate-communications/20828">https://forum.sky.money/t/wbc-aligned-delegate-communications/20828</a>
             || BLUE | <a
-              href="https://etherscan.io/address/0xb6c09680d822f162449cdfb8248a7d3fc26ec9bf">https://etherscan.io/address/0xb6c09680d822f162449cdfb8248a7d3fc26ec9bf</a>
+              href="https://etherscan.io/address/0xb6C09680D822F162449cdFB8248a7D3FC26Ec9Bf">https://etherscan.io/address/0xb6C09680D822F162449cdFB8248a7D3FC26Ec9Bf</a>
             <a href="https://etherscan.io/verifySig/19057">https://etherscan.io/verifySig/19057</a> | <a
               href="https://etherscan.io/address/0x173a1c04B79Ed9266721c1154dAa29AddC0B9558">https://etherscan.io/address/0x173a1c04B79Ed9266721c1154dAa29AddC0B9558</a>
             <a href="https://etherscan.io/verifySig/273235">https://etherscan.io/verifySig/273235</a> | <a
@@ -22782,7 +22966,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The address of SPK on the Ethereum Mainnet is <code>0xc20059e0317de91738d13af027dfc4a50781b066</code>. The address of SPK on Base is <code>0x24327d9138f9f3fc77becb10d9bdc2abb324ee50</code>.</td>
+          <td>The address of SPK on the Ethereum Mainnet is <code>0xc20059e0317DE91738d13af027DfC4a50781b066</code>. The address of SPK on Base is <code>0x24327d9138F9f3fc77BEcB10d9BDc2ABb324EE50</code>.</td>
         </tr>
         <tr>
           <td>
@@ -22954,11 +23138,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>DAOcraft Instance Configuration Document Location</dfn>
+            <dfn>Amatsu Instance Configuration Document Location</dfn>
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>This Instance's associated Instance Configuration Document is located at <dfn>DAOcraft Instance Configuration Document</dfn>.</td>
+          <td>This Instance's associated Instance Configuration Document is located at <dfn>Amatsu Instance Configuration Document</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -23018,11 +23202,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>DAOcraft Instance Configuration Document</dfn>
+            <dfn>Amatsu Instance Configuration Document</dfn>
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The documents herein contain the Instance Configuration Document for the DAOcraft Executor Accord Primitive Instance.</td>
+          <td>The documents herein contain the Instance Configuration Document for the Amatsu Executor Accord Primitive Instance.</td>
         </tr>
         <tr>
           <td>
@@ -23030,7 +23214,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The documents herein define the parameters of the DAOcraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein define the parameters of the Amatsu Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -23038,7 +23222,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>In the near term DAOcraft will take on the functions of an Operational Executor Agent, including both Operational GovOps and Operational Facilitator roles.</td>
+          <td>In the near term Amatsu will take on the functions of an Operational Executor Agent, including both Operational GovOps and Operational Facilitator roles.</td>
         </tr>
         <tr>
           <td>
@@ -23046,7 +23230,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The documents herein define the custom parameters of the DAOcraft Instance of the Executor Accord Primitive, if any.</td>
+          <td>The documents herein define the custom parameters of the Amatsu Instance of the Executor Accord Primitive, if any.</td>
         </tr>
         <tr>
           <td>
@@ -23054,7 +23238,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The documents herein define the process for the ongoing management of the DAOcraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein define the process for the ongoing management of the Amatsu Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -23062,7 +23246,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The documents herein contain data relevant to the DAOcraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein contain data relevant to the Amatsu Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -24882,6 +25066,38 @@
         </tr>
         <tr>
           <td>
+            <dfn>Ethereum Mainnet - Aave Core USDC Instance Configuration Document Location</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>This Instance's associated Instance Configuration Document is located at <dfn>Ethereum Mainnet - Aave Core USDC Instance Configuration Document</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Ethereum Mainnet - Aave Core USDS Instance Configuration Document Location</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>This Instance's associated Instance Configuration Document is located at <dfn>Ethereum Mainnet - Aave Core USDS Instance Configuration Document</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Ethereum Mainnet - Aave Core USDT Instance Configuration Document Location</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>This Instance's associated Instance Configuration Document is located at <dfn>Ethereum Mainnet - Aave Core USDT Instance Configuration Document</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Ethereum Mainnet - Aave USDe Instance Configuration Document Location</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>This Instance's associated Instance Configuration Document is located at <dfn>Ethereum Mainnet - Aave USDe Instance Configuration Document</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
             <dfn>Maple</dfn>
           </td>
           <td>Spark</td>
@@ -24994,12 +25210,21 @@
         </tr>
         <tr>
           <td>
-            <dfn>Ethereum Mainnet - Curve sUSDC/USDT Pool Instance Configuration Document Location</dfn>
+            <dfn>Ethereum Mainnet - Curve sUSDS/USDT Pool Instance Configuration Document Location</dfn>
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>This Instance's associated Instance Configuration Document is located at <dfn>Ethereum Mainnet - Curve sUSDC/USDT Pool Instance Configuration Document</dfn>.</td>
+          <td>This Instance's associated Instance Configuration Document is located at <dfn>Ethereum Mainnet - Curve sUSDS/USDT Pool Instance Configuration Document</dfn>.</td>
         </tr>
+        <tr>
+          <td>
+            <dfn>Ethereum Mainnet - Curve USDC/USDT Pool Instance Configuration Document Location</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>This Instance's associated Instance Configuration Document is located at <dfn>Ethereum Mainnet - Curve USDC/USDT Pool Instance Configuration Document</dfn>.</td>
+        </tr>
+        <tr>
         <tr>
           <td>
             <dfn>Ethereum Mainnet - Curve pyUSD/USDC Pool Instance Configuration Document Location</dfn>
@@ -25023,6 +25248,22 @@
           <td>Spark</td>
           <td>Core</td>
           <td>This Instance's associated Instance Configuration Document is located at <dfn>Ethereum Mainnet - Morpho Dai Instance Configuration Document</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Ethereum Mainnet - Morpho USDS Instance Configuration Document Location</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>This Instance's associated Instance Configuration Document is located at <dfn>Ethereum Mainnet - Morpho USDS Instance Configuration Document</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Ethereum Mainnet - Morpho USDC Instance Configuration Document Location</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>This Instance's associated Instance Configuration Document is located at <dfn>Ethereum Mainnet - Morpho USDC Instance Configuration Document</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -26174,7 +26415,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The Core Operator Relayer Multisig has the RELAYER_ROLE as defined in <dfn>Relayer Role</dfn> and is controlled by DAOcraft.</td>
+          <td>The Core Operator Relayer Multisig has the RELAYER_ROLE as defined in <dfn>Relayer Role</dfn> and is controlled by Amatsu.</td>
         </tr>
         <tr>
           <td>
@@ -26198,7 +26439,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The signers of the Core Operator Relayer Multisig are three (3) addresses controlled by Ecosystem Actor DAOcraft.</td>
+          <td>The signers of the Core Operator Relayer Multisig are three (3) addresses controlled by Ecosystem Actor Amatsu.</td>
         </tr>
         <tr>
           <td>
@@ -26214,7 +26455,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>Ecosystem Actor DAOcraft can change the signers of the Core Operator Relayer Multisig at any time, so long as there are at least three (3) signers and at least two thirds of signers are required to execute transactions.</td>
+          <td>Ecosystem Actor Amatsu can change the signers of the Core Operator Relayer Multisig at any time, so long as there are at least three (3) signers and at least two thirds of signers are required to execute transactions.</td>
         </tr>
         <tr>
           <td>
@@ -26261,7 +26502,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><p>The signers of the Freezer Multisig should exercise their authority to freeze the Spark Liquidity Layer in the event that Spark is not complying with rules regarding Risk Capital or Asset Liability Management, or in the event of another emergency. The signers should consult with Ecosystem Actor DAOcraft before exercising such authority, unless such consultation would cause a delay that could result in a loss of user funds or harm to Sky or Spark. Ecosystem Actor DAOcraft may also ask the signers to exercise the Freezer Multisig in an emergency. The signers will work with DAOcraft and, if necessary, other Ecosystem Actors, in good faith in determining whether to exercise their authority based on such request.</p><p>Each action executed by the Freezer Multisig, including any function calls and their parameters, must be reported to the Sky community within a reasonable time frame through a post on the Sky Forum.</p></td>
+          <td><p>The signers of the Freezer Multisig should exercise their authority to freeze the Spark Liquidity Layer in the event that Spark is not complying with rules regarding Risk Capital or Asset Liability Management, or in the event of another emergency. The signers should consult with Ecosystem Actor Amatsu before exercising such authority, unless such consultation would cause a delay that could result in a loss of user funds or harm to Sky or Spark. Ecosystem Actor Amatsu may also ask the signers to exercise the Freezer Multisig in an emergency. The signers will work with Amatsu and, if necessary, other Ecosystem Actors, in good faith in determining whether to exercise their authority based on such request.</p><p>Each action executed by the Freezer Multisig, including any function calls and their parameters, must be reported to the Sky community within a reasonable time frame through a post on the Sky Forum.</p></td>
         </tr>
         <tr>
           <td>
@@ -27962,7 +28203,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><code>0xdc035d45d973e3ec169d2276ddab16f1e407384f</code></td>
+          <td><code>0xdC035D45d973E3EC169d2276DDab16f1e407384F</code></td>
         </tr>
         <tr>
           <td>
@@ -27988,8 +28229,8 @@
           <td>Core</td>
           <td>The inflow rate limits are:
             <ul>
-              <li><code>maxAmount</code>: 200,000,000</li>
-              <li><code>slope</code>(per day): 400,000,000</li>
+              <li><code>maxAmount</code>: 200,000,000 USDS</li>
+              <li><code>slope</code>: 400,000,000 USDS per day</li>
             </ul>
           </td>
         </tr>
@@ -28108,7 +28349,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><code>0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48</code></td>
+          <td><code>0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48</code></td>
         </tr>
         <tr>
           <td>
@@ -28134,8 +28375,8 @@
           <td>Core</td>
           <td>The inflow rate limits are:
             <ul>
-              <li><code>maxAmount</code>: 20,000,000</li>
-              <li><code>slope</code>: 10,000,000</li>
+              <li><code>maxAmount</code>: 20,000,000 USDC</li>
+              <li><code>slope</code>: 10,000,000 USDC per day</li>
             </ul>
           </td>
         </tr>
@@ -28262,7 +28503,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><code>0x6b175474e89094c44da98b954eedeac495271d0f</code></td>
+          <td><code>0x6B175474E89094C44Da98b954EedeAC495271d0F</code></td>
         </tr>
         <tr>
           <td>
@@ -28280,8 +28521,8 @@
           <td>Core</td>
           <td>The inflow rate limits are:
             <ul>
-              <li><code>maxAmount</code>: 100,000,000</li>
-              <li><code>slope</code>: 50,000,000</li>
+              <li><code>maxAmount</code>: 100,000,000 DAI</li>
+              <li><code>slope</code>: 50,000,000 DAI per day</li>
             </ul>
           </td>
         </tr>
@@ -28391,7 +28632,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><code>0xdac17f958d2ee523a2206206994597c13d831ec7</code></td>
+          <td><code>0xdAC17F958D2ee523a2206206994597C13D831ec7</code></td>
         </tr>
         <tr>
           <td>
@@ -28417,8 +28658,8 @@
           <td>Core</td>
           <td>The inflow rate limits are:
             <ul>
-              <li><code>maxAmount</code>: 50,000,000</li>
-              <li><code>slope</code>: 25,000,000</li>
+              <li><code>maxAmount</code>: 100,000,000 USDT</li>
+              <li><code>slope</code>: 100,000,000 USDT per day</li>
             </ul>
           </td>
         </tr>
@@ -28562,8 +28803,8 @@
           <td>Core</td>
           <td>The inflow rate limits are:
             <ul>
-              <li><code>maxAmount</code>: 50,000,000</li>
-              <li><code>slope</code>: 25,000,000</li>
+              <li><code>maxAmount</code>: 100,000,000 pyUSD</li>
+              <li><code>slope</code>: 100,000,000 pyUSD per day</li>
             </ul>
           </td>
         </tr>
@@ -28689,7 +28930,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><code>0xdc035d45d973e3ec169d2276ddab16f1e407384f</code></td>
+          <td><code>0xdC035D45d973E3EC169d2276DDab16f1e407384F</code></td>
         </tr>
         <tr>
           <td>
@@ -28723,8 +28964,8 @@
           <td>Core</td>
           <td>The inflow rate limits are:
             <ul>
-              <li><code>maxAmount</code>: 50,000,000</li>
-              <li><code>slope</code>: 50,000,000</li>
+              <li><code>maxAmount</code>: 50,000,000 USDS</li>
+              <li><code>slope</code>: 50,000,000 USDS per day</li>
             </ul>
           </td>
         </tr>
@@ -29041,6 +29282,590 @@
         </tr>
         <tr>
           <td>
+            <dfn>Ethereum Mainnet - Aave Core USDC Instance Configuration Document</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain the Instance Configuration Document for the Aave Core USDC Instance.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>RRC Framework Full Implementation</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><strong><code>Covered</code></strong></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Parameters</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the parameters of the Aave Core USDC Instance of the Allocation System Primitive.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Instance Identifiers</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the Instance identifiers</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Network</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>Ethereum Mainnet</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Target Protocol</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>Aave Core</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Asset Supplied By SLL</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>USDC</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Token</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>aEthUSDC</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Contract Addresses</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the Instance contract addresses.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Token Address</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><code>0x98C23E9d8f34FEFb1B7BD6a91B7FF122F4e16F5c</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Underlying Asset Address</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><code>0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Rate Limit IDs</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The specific <code>RateLimitID</code>(s) for this conduit's inflow and outflow will be specified in a future iteration of the Spark Artifact.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The current <code>maxAmount</code> and <code>slope</code> for this conduit's inflow/outflow are defined in the subdocuments herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Inflow Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The inflow rate limits are:
+            <ul>
+              <li><code>maxAmount</code>: 50,000,000 USDC</li>
+              <li><code>slope</code>: 25,000,000 USDC per day</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Outflow Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The outflow rate limits are:
+            <ul>
+              <li><code>maxAmount</code>: Unlimited</li>
+              <li><code>slope</code>: Unlimited</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Off-chain Operational Parameters</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain specific off-chain parameters for this Instance.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Instance-specific Operational Processes</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain operational procedures or monitoring requirements unique to this Instance that deviate from or otherwise supplement the general SLL processes.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Ethereum Mainnet - Aave Core USDS Instance Configuration Document</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain the Instance Configuration Document for the Aave Core USDS Instance.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>RRC Framework Full Implementation</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><strong><code>Covered</code></strong></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Parameters</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the parameters of the Aave Core USDS Instance of the Allocation System Primitive.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Instance Identifiers</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the Instance identifiers</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Network</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>Ethereum Mainnet</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Target Protocol</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>Aave Core</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Asset Supplied By SLL</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>USDS</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Token</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>aEthUSDS</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Contract Addresses</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the Instance contract addresses.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Token Address</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><code>0x32a6268f9Ba3642Dda7892aDd74f1D34469A4259</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Underlying Asset Address</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><code>0xdC035D45d973E3EC169d2276DDab16f1e407384F</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Rate Limit IDs</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The specific <code>RateLimitID</code>(s) for this conduit's inflow and outflow will be specified in a future iteration of the Spark Artifact.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The current <code>maxAmount</code> and <code>slope</code> for this conduit's inflow/outflow are defined in the subdocuments herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Inflow Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The inflow rate limits are:
+            <ul>
+              <li><code>maxAmount</code>: 50,000,000 USDS</li>
+              <li><code>slope</code>: 25,000,000 USDS per day</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Outflow Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The outflow rate limits are:
+            <ul>
+              <li><code>maxAmount</code>: Unlimited</li>
+              <li><code>slope</code>: Unlimited</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Off-chain Operational Parameters</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain specific off-chain parameters for this Instance.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Instance-specific Operational Processes</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain operational procedures or monitoring requirements unique to this Instance that deviate from or otherwise supplement the general SLL processes.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Ethereum Mainnet - Aave Core USDT Instance Configuration Document</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain the Instance Configuration Document for the Aave Core USDT Instance.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>RRC Framework Full Implementation</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><strong><code>Covered</code></strong></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Parameters</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the parameters of the Aave Core USDT Instance of the Allocation System Primitive.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Instance Identifiers</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the Instance identifiers</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Network</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>Ethereum Mainnet</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Target Protocol</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>Aave Core</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Asset Supplied By SLL</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>USDT</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Token</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>aEthUSDT</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Contract Addresses</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the Instance contract addresses.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Token Address</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><code>0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Underlying Asset Address</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><code>0xdAC17F958D2ee523a2206206994597C13D831ec7</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Rate Limit IDs</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The specific <code>RateLimitID</code>(s) for this conduit's inflow and outflow will be specified in a future iteration of the Spark Artifact.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The current <code>maxAmount</code> and <code>slope</code> for this conduit's inflow/outflow are defined in the subdocuments herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Inflow Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The inflow rate limits are:
+            <ul>
+              <li><code>maxAmount</code>: 50,000,000 USDT</li>
+              <li><code>slope</code>: 25,000,000 USDT per day</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Outflow Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The outflow rate limits are:
+            <ul>
+              <li><code>maxAmount</code>: Unlimited</li>
+              <li><code>slope</code>: Unlimited</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Off-chain Operational Parameters</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain specific off-chain parameters for this Instance.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Instance-specific Operational Processes</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain operational procedures or monitoring requirements unique to this Instance that deviate from or otherwise supplement the general SLL processes.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Ethereum Mainnet - Aave USDe Instance Configuration Document</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain the Instance Configuration Document for the Aave USDe Instance.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>RRC Framework Full Implementation</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><strong><code>Covered</code></strong></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Parameters</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the parameters of the Aave USDe Instance of the Allocation System Primitive.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Instance Identifiers</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the Instance identifiers</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Network</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>Ethereum Mainnet</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Target Protocol</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>Aave Core</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Asset Supplied By SLL</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>USDe</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Token</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>aEthUSDe</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Contract Addresses</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the Instance contract addresses.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Token Address</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><code>0x4F5923Fc5FD4a93352581b38B7cD26943012DECF</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Underlying Asset Address</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><code>0x4c9EDD5852cd905f086C759E8383e09bff1E68B3</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Rate Limit IDs</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The specific <code>RateLimitID</code>(s) for this conduit's inflow and outflow will be specified in a future iteration of the Spark Artifact.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The current <code>maxAmount</code> and <code>slope</code> for this conduit's inflow/outflow are defined in the subdocuments herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Inflow Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The inflow rate limits are:
+            <ul>
+              <li><code>maxAmount</code>: 250,000,000 USDe</li>
+              <li><code>slope</code>: 100,000,000 USDe per day</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Outflow Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The outflow rate limits are:
+            <ul>
+              <li><code>maxAmount</code>: Unlimited</li>
+              <li><code>slope</code>: Unlimited</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Off-chain Operational Parameters</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain specific off-chain parameters for this Instance.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Instance-specific Operational Processes</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain operational procedures or monitoring requirements unique to this Instance that deviate from or otherwise supplement the general SLL processes.</td>
+        </tr>
+        <tr>
+          <td>
             <dfn>Maple</dfn>
           </td>
           <td>Spark</td>
@@ -29133,7 +29958,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><code>0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48</code></td>
+          <td><code>0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48</code></td>
         </tr>
         <tr>
           <td>
@@ -29167,8 +29992,8 @@
           <td>Core</td>
           <td>The inflow rate limits are:
             <ul>
-              <li><code>maxAmount</code>: 100,000,000</li>
-              <li><code>slope</code>: 20,000,000</li>
+              <li><code>maxAmount</code>: 100,000,000 USDC</li>
+              <li><code>slope</code>: 20,000,000 USDC per day</li>
             </ul>
           </td>
         </tr>
@@ -29287,7 +30112,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><code>0x4c9edd5852cd905f086c759e8383e09bff1e68b3</code></td>
+          <td><code>0x4c9EDD5852cd905f086C759E8383e09bff1E68B3</code></td>
         </tr>
         <tr>
           <td>
@@ -29329,8 +30154,8 @@
           <td>Core</td>
           <td>The inflow rate limits are:
             <ul>
-              <li><code>maxAmount</code>: 250,000,000</li>
-              <li><code>slope</code>: 100,000,000 per day</li>
+              <li><code>maxAmount</code>: 250,000,000 USDC</li>
+              <li><code>slope</code>: 100,000,000 USDC per day</li>
             </ul>
           </td>
         </tr>
@@ -29342,8 +30167,8 @@
           <td>Core</td>
           <td>The outflow rate limits are:
             <ul>
-              <li><code>maxAmount</code>: 500,000,000</li>
-              <li><code>slope</code>: 200,000,000 per day</li>
+              <li><code>maxAmount</code>: 500,000,000 USDe</li>
+              <li><code>slope</code>: 200,000,000 USDe per day</li>
             </ul>
           </td>
         </tr>
@@ -29653,7 +30478,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><code>0x4c9edd5852cd905f086c759e8383e09bff1e68b3</code></td>
+          <td><code>0x4c9EDD5852cd905f086C759E8383e09bff1E68B3</code></td>
         </tr>
         <tr>
           <td>
@@ -29687,8 +30512,8 @@
           <td>Core</td>
           <td>The inflow rate limits are:
             <ul>
-              <li><code>maxAmount</code>: 250,000,000</li>
-              <li><code>slope</code>: 100,000,000 per day</li>
+              <li><code>maxAmount</code>: 250,000,000 USDe</li>
+              <li><code>slope</code>: 100,000,000 USDe per day</li>
             </ul>
           </td>
         </tr>
@@ -29996,7 +30821,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><code>0xa3931d71877c0e7a3148cb7eb4463524fec27fbd</code></td>
+          <td><code>0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD</code></td>
         </tr>
         <tr>
           <td>
@@ -30022,8 +30847,8 @@
           <td>Core</td>
           <td>The inflow rate limits are:
             <ul>
-              <li><code>maxAmount</code>: 10,000,000</li>
-              <li><code>slope</code>: 5,000,000</li>
+              <li><code>maxAmount</code>: 10,000,000 sUSDS</li>
+              <li><code>slope</code>: 5,000,000 sUSDS per day</li>
             </ul>
           </td>
         </tr>
@@ -30035,8 +30860,8 @@
           <td>Core</td>
           <td>The outflow rate limits are:
             <ul>
-              <li><code>maxAmount</code>: 10,000,000</li>
-              <li><code>slope</code>: 5,000,000</li>
+              <li><code>maxAmount</code>: 10,000,000 fsUSDS</li>
+              <li><code>slope</code>: 5,000,000 fsUSDS per day</li>
             </ul>
           </td>
         </tr>
@@ -30433,7 +31258,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><code>0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48</code></td>
+          <td><code>0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48</code></td>
         </tr>
         <tr>
           <td>
@@ -30593,7 +31418,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><code>0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48</code></td>
+          <td><code>0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48</code></td>
         </tr>
         <tr>
           <td>
@@ -30747,7 +31572,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><code>0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48</code></td>
+          <td><code>0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48</code></td>
         </tr>
         <tr>
           <td>
@@ -30823,11 +31648,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>Ethereum Mainnet - Curve sUSDC/USDT Pool Instance Configuration Document</dfn>
+            <dfn>Ethereum Mainnet - Curve sUSDS/USDT Pool Instance Configuration Document</dfn>
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The documents herein contain the Instance Configuration Document for the Curve sUSDC/USDT Pool Instance.</td>
+          <td>The documents herein contain the Instance Configuration Document for the Curve sUSDS/USDT Pool Instance.</td>
         </tr>
         <tr>
           <td>
@@ -30843,7 +31668,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The documents herein define the parameters of the Curve sUSDC/USDT Pool Instance of the Allocation System Primitive.</td>
+          <td>The documents herein define the parameters of the Curve sUSDS/USDT Pool Instance of the Allocation System Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -30907,7 +31732,15 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><code>0xdac17f958d2ee523a2206206994597c13d831ec7</code></td>
+          <td><code>0xdAC17F958D2ee523a2206206994597C13D831ec7</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Underlying Asset Address</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><code>0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD</code></td>
         </tr>
         <tr>
           <td>
@@ -30934,7 +31767,7 @@
           <td>The inflow rate limits are:
             <ul>
               <li><code>maxAmount</code>: 5,000,000</li>
-              <li><code>slope</code> (per day): 20,000,000</li>
+              <li><code>slope</code>: 20,000,000 per day</li>
               <li>Max slippage: 0.15%</li>
             </ul>
           </td>
@@ -30948,7 +31781,7 @@
           <td>The outflow rate limits are:
             <ul>
               <li><code>maxAmount</code>: 5,000,000</li>
-              <li><code>slope</code>: 20,000,000</li>
+              <li><code>slope</code>: 20,000,000 per day</li>
               <li>Max slippage: 0.15%</li>
             </ul>
           </td>
@@ -30961,8 +31794,176 @@
           <td>Core</td>
           <td>The swap rate limits are:
             <ul>
+              <li><code>maxAmount</code>: 25,000,000</li>
+              <li><code>slope</code>: 100,000,000 per day</li>
+              <li>Max slippage: 0.15%</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Off-chain Operational Parameters</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain specific off-chain parameters for this Instance.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Instance-specific Operational Processes</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain operational procedures or monitoring requirements unique to this Instance that deviate from or otherwise supplement the general SLL processes.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Ethereum Mainnet - Curve USDC/USDT Pool Instance Configuration Document</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain the Instance Configuration Document for the Curve USDC/USDT Pool Instance.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>RRC Framework Full Implementation</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><strong><code>Pending</code></strong></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Parameters</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the parameters of the Curve USDC/USDT Pool Instance of the Allocation System Primitive.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Instance Identifiers</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the Instance identifiers</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Network</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>Ethereum Mainnet</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Target Protocol</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>Curve</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Asset Supplied By SLL</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>N/A - swap only</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Token</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>crv2pool</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Contract Addresses</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the Instance contract addresses.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Token Address</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><code>0x4f493B7dE8aAC7d55F71853688b1F7C8F0243C85</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Underlying Asset Address</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><code>0xdAC17F958D2ee523a2206206994597C13D831ec7</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Underlying Asset Address</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><code>0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Rate Limit IDs</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The specific <code>RateLimitID</code>(s) for this conduit's inflow and outflow will be specified in a future iteration of the Spark Artifact.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The current <code>maxAmount</code>, <code>slope</code> and slippage for this conduit's inflow/outflow/swap are defined in the subdocuments herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Inflow Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The inflow rate limits are:
+            <ul>
+              <li><code>maxAmount</code>: N/A - swap only</li>
+              <li><code>slope</code>: N/A - swap only</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Outflow Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The outflow rate limits are:
+            <ul>
+              <li><code>maxAmount</code>: N/A - swap only</li>
+              <li><code>slope</code>: N/A - swap only</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Swap Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The swap rate limits are:
+            <ul>
               <li><code>maxAmount</code>: 5,000,000</li>
-              <li><code>slope</code>: 20,000,000</li>
+              <li><code>slope</code>: 20,000,000 per day</li>
               <li>Max slippage: 0.15%</li>
             </ul>
           </td>
@@ -31112,8 +32113,8 @@
           <td>The swap rate limits are:
             <ul>
               <li><code>maxAmount</code>: 5,000,000</li>
-              <li><code>slope</code>: 25,000,000 per day</li>
-              <li>Max slippage: 0.05%</li>
+              <li><code>slope</code>: 100,000,000 per day</li>
+              <li>Max slippage: 0.1%</li>
             </ul>
           </td>
         </tr>
@@ -31227,7 +32228,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><code>0x6b175474e89094c44da98b954eedeac495271d0f</code></td>
+          <td><code>0x6B175474E89094C44Da98b954EedeAC495271d0F</code></td>
         </tr>
         <tr>
           <td>
@@ -31253,8 +32254,300 @@
           <td>Core</td>
           <td>The inflow rate limits are:
             <ul>
-              <li><code>maxAmount</code>: 200,000,000</li>
-              <li><code>slope</code> (per day): 100,000,000</li>
+              <li><code>maxAmount</code>: 200,000,000 DAI</li>
+              <li><code>slope</code>: 100,000,000 DAI per day</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Outflow Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The outflow rate limits are:
+            <ul>
+              <li><code>maxAmount</code>: This parameter will be specified in a future iteration of the Spark Artifact.</li>
+              <li><code>slope</code>: This parameter will be specified in a future iteration of the Spark Artifact.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Off-chain Operational Parameters</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain specific off-chain parameters for this Instance.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Instance-specific Operational Processes</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain operational procedures or monitoring requirements unique to this Instance that deviate from or otherwise supplement the general SLL processes.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Ethereum Mainnet - Morpho USDS Instance Configuration Document</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain the Instance Configuration Document for the Morpho USDS Instance.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>RRC Framework Full Implementation</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><strong><code>Pending</code></strong></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Parameters</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the parameters of the Morpho USDS Instance of the Allocation System Primitive.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Instance Identifiers</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the Instance identifiers</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Network</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>Ethereum Mainnet</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Target Protocol</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>Morpho</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Asset Supplied By SLL</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>USDS</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Token</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>sparkUSDS</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Contract Addresses</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the Instance contract addresses.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Token Address</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><code>0xe41a0583334f0dc4E023Acd0bFef3667F6FE0597</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Underlying Asset Address</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><code>0xdC035D45d973E3EC169d2276DDab16f1e407384F</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Rate Limit IDs</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The specific <code>RateLimitID</code>(s) for this conduit's inflow and outflow will be specified in a future iteration of the Spark Artifact.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The current <code>maxAmount</code> and <code>slope</code> for this conduit's inflow/outflow are defined in the subdocuments herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Inflow Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The inflow rate limits are:
+            <ul>
+              <li><code>maxAmount</code>: 200,000,000 USDS</li>
+              <li><code>slope</code>: 100,000,000 USDS per day</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Outflow Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The outflow rate limits are:
+            <ul>
+              <li><code>maxAmount</code>: This parameter will be specified in a future iteration of the Spark Artifact.</li>
+              <li><code>slope</code>: This parameter will be specified in a future iteration of the Spark Artifact.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Off-chain Operational Parameters</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain specific off-chain parameters for this Instance.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Instance-specific Operational Processes</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain operational procedures or monitoring requirements unique to this Instance that deviate from or otherwise supplement the general SLL processes.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Ethereum Mainnet - Morpho USDC Instance Configuration Document</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain the Instance Configuration Document for the Morpho USDC Instance.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>RRC Framework Full Implementation</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><strong><code>Pending</code></strong></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Parameters</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the parameters of the Morpho USDC Instance of the Allocation System Primitive.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Instance Identifiers</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the Instance identifiers</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Network</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>Ethereum Mainnet</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Target Protocol</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>Morpho</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Asset Supplied By SLL</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>USDC</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Token</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>sparkUSDCbc</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Contract Addresses</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the Instance contract addresses.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Token Address</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><code>0x56A76b428244a50513ec81e225a293d128fd581D</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Underlying Asset Address</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><code>0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Rate Limit IDs</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The specific <code>RateLimitID</code>(s) for this conduit's inflow and outflow will be specified in a future iteration of the Spark Artifact.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The current <code>maxAmount</code> and <code>slope</code> for this conduit's inflow/outflow are defined in the subdocuments herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Inflow Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The inflow rate limits are:
+            <ul>
+              <li><code>maxAmount</code>: 50,000,000 USDC</li>
+              <li><code>slope</code>: 25,000,000 USDC per day</li>
             </ul>
           </td>
         </tr>
@@ -31388,7 +32681,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><code>0x833589fcd6edb6e08f4c7c32d4f71b54bda02913</code></td>
+          <td><code>0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913</code></td>
         </tr>
         <tr>
           <td>
@@ -31414,8 +32707,8 @@
           <td>Core</td>
           <td>The inflow rate limits are:
             <ul>
-              <li><code>maxAmount</code>: 100,000,000</li>
-              <li><code>slope</code>(per day): 50,000,000</li>
+              <li><code>maxAmount</code>: 100,000,000 USDC</li>
+              <li><code>slope</code>: 50,000,000 USDC per day</li>
             </ul>
           </td>
         </tr>
@@ -31567,8 +32860,8 @@
           <td>Core</td>
           <td>The inflow rate limits are:
             <ul>
-              <li><code>maxAmount</code>: 10,000,000</li>
-              <li><code>slope</code>: 5,000,000</li>
+              <li><code>maxAmount</code>: 10,000,000 USDS</li>
+              <li><code>slope</code>: 5,000,000 USDS per day</li>
             </ul>
           </td>
         </tr>
@@ -31580,8 +32873,8 @@
           <td>Core</td>
           <td>The outflow rate limits are:
             <ul>
-              <li><code>maxAmount</code>: 10,000,000</li>
-              <li><code>slope</code>: 5,000,000</li>
+              <li><code>maxAmount</code>: 10,000,000 fsUSDS</li>
+              <li><code>slope</code>: 5,000,000 fsUSDS per day</li>
             </ul>
           </td>
         </tr>
@@ -31729,8 +33022,8 @@
           <td>Core</td>
           <td>The inflow rate limits are:
             <ul>
-              <li><code>maxAmount</code>: 50,000,000</li>
-              <li><code>slope</code>: 25,000,000</li>
+              <li><code>maxAmount</code>: 50,000,000 USDC</li>
+              <li><code>slope</code>: 25,000,000 USDC per day</li>
             </ul>
           </td>
         </tr>
@@ -31891,8 +33184,8 @@
           <td>Core</td>
           <td>The inflow rate limits are:
             <ul>
-              <li><code>maxAmount</code>: 10,000,000</li>
-              <li><code>slope</code>: 5,000,000</li>
+              <li><code>maxAmount</code>: 10,000,000 USDS</li>
+              <li><code>slope</code>: 5,000,000 USDS per day</li>
             </ul>
           </td>
         </tr>
@@ -31904,8 +33197,8 @@
           <td>Core</td>
           <td>The outflow rate limits are:
             <ul>
-              <li><code>maxAmount</code>: 10,000,000</li>
-              <li><code>slope</code>: 5,000,000</li>
+              <li><code>maxAmount</code>: 10,000,000 fsUSDS</li>
+              <li><code>slope</code>: 5,000,000 fsUSDS per day</li>
             </ul>
           </td>
         </tr>
@@ -32053,8 +33346,8 @@
           <td>Core</td>
           <td>The inflow rate limits are:
             <ul>
-              <li><code>maxAmount</code>: 50,000,000</li>
-              <li><code>slope</code>: 50,000,000</li>
+              <li><code>maxAmount</code>: 50,000,000 USDC</li>
+              <li><code>slope</code>: 50,000,000 USDC per day</li>
             </ul>
           </td>
         </tr>
@@ -32695,7 +33988,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>A Delegate can voluntarily offboard by submitting a resignation message in the Spark Star category of Sky Forum with a signed message from their Delegate wallet as proof. The offboarding takes effect immediately after all active proposals conclude.</td>
+          <td>A Delegate can voluntarily offboard by submitting a resignation message in the Spark Prime category of Sky Forum with a signed message from their Delegate wallet as proof. The offboarding takes effect immediately after all active proposals conclude.</td>
         </tr>
         <tr>
           <td>
@@ -34395,11 +35688,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>DAOcraft Instance Configuration Document Location</dfn>
+            <dfn>Amatsu Instance Configuration Document Location</dfn>
           </td>
           <td>Grove</td>
           <td>Core</td>
-          <td>This Instance's associated Instance Configuration Document is located at <dfn>DAOcraft Instance Configuration Document</dfn>.</td>
+          <td>This Instance's associated Instance Configuration Document is located at <dfn>Amatsu Instance Configuration Document</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -34459,11 +35752,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>DAOcraft Instance Configuration Document</dfn>
+            <dfn>Amatsu Instance Configuration Document</dfn>
           </td>
           <td>Grove</td>
           <td>Core</td>
-          <td>The documents herein contain the Instance Configuration Document for the DAOcraft Executor Accord Primitive Instance.</td>
+          <td>The documents herein contain the Instance Configuration Document for the Amatsu Executor Accord Primitive Instance.</td>
         </tr>
         <tr>
           <td>
@@ -34471,7 +35764,7 @@
           </td>
           <td>Grove</td>
           <td>Core</td>
-          <td>The documents herein define the parameters of the DAOcraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein define the parameters of the Amatsu Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -34479,7 +35772,7 @@
           </td>
           <td>Grove</td>
           <td>Core</td>
-          <td>In the near term DAOcraft will take on the functions of an Operational Executor Agent, including both Operational GovOps and Operational Facilitator roles.</td>
+          <td>In the near term Amatsu will take on the functions of an Operational Executor Agent, including both Operational GovOps and Operational Facilitator roles.</td>
         </tr>
         <tr>
           <td>
@@ -34487,7 +35780,7 @@
           </td>
           <td>Grove</td>
           <td>Core</td>
-          <td>The documents herein define the custom parameters of the DAOcraft Instance of the Executor Accord Primitive, if any.</td>
+          <td>The documents herein define the custom parameters of the Amatsu Instance of the Executor Accord Primitive, if any.</td>
         </tr>
         <tr>
           <td>
@@ -34495,7 +35788,7 @@
           </td>
           <td>Grove</td>
           <td>Core</td>
-          <td>The documents herein define the process for the ongoing management of the DAOcraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein define the process for the ongoing management of the Amatsu Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -34503,7 +35796,7 @@
           </td>
           <td>Grove</td>
           <td>Core</td>
-          <td>The documents herein contain data relevant to the DAOcraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein contain data relevant to the Amatsu Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -37596,7 +38889,7 @@
           </td>
           <td>Grove</td>
           <td>Core</td>
-          <td><code>0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48</code></td>
+          <td><code>0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48</code></td>
         </tr>
         <tr>
           <td>
@@ -37896,7 +39189,7 @@
           </td>
           <td>Grove</td>
           <td>Core</td>
-          <td><code>0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48</code></td>
+          <td><code>0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48</code></td>
         </tr>
         <tr>
           <td>
@@ -38196,7 +39489,7 @@
           </td>
           <td>Grove</td>
           <td>Core</td>
-          <td><code>0x4c9edd5852cd905f086c759e8383e09bff1e68b3</code></td>
+          <td><code>0x4c9EDD5852cd905f086C759E8383e09bff1E68B3</code></td>
         </tr>
         <tr>
           <td>
@@ -38562,7 +39855,7 @@
           </td>
           <td>Grove</td>
           <td>Core</td>
-          <td><code>0x4c9edd5852cd905f086c759e8383e09bff1e68b3</code></td>
+          <td><code>0x4c9EDD5852cd905f086C759E8383e09bff1E68B3</code></td>
         </tr>
         <tr>
           <td>
@@ -40514,12 +41807,12 @@
         </tr>
         <tr>
           <td>
-            <dfn>DAOcraft Instance Configuration Document Location</dfn>
+            <dfn>Amatsu Instance Configuration Document Location</dfn>
           </td>
           <td>Launch Agent 2</td>
           <td>Core</td>
           <td>
-            This Instance's associated Instance Configuration Document is located at <dfn>DAOcraft Instance Configuration Document</dfn>.
+            This Instance's associated Instance Configuration Document is located at <dfn>Amatsu Instance Configuration Document</dfn>.
           </td>
         </tr>
         <tr>
@@ -40582,11 +41875,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>DAOcraft Instance Configuration Document</dfn>
+            <dfn>Amatsu Instance Configuration Document</dfn>
           </td>
           <td>Launch Agent 2</td>
           <td>Core</td>
-          <td>The documents herein contain the Instance Configuration Document for the DAOcraft Executor Accord Primitive Instance.</td>
+          <td>The documents herein contain the Instance Configuration Document for the Amatsu Executor Accord Primitive Instance.</td>
         </tr>
         <tr>
           <td>
@@ -40594,7 +41887,7 @@
           </td>
           <td>Launch Agent 2</td>
           <td>Core</td>
-          <td>The documents herein define the parameters of the DAOcraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein define the parameters of the Amatsu Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -40602,7 +41895,7 @@
           </td>
           <td>Launch Agent 2</td>
           <td>Core</td>
-          <td>In the near term DAOcraft will take on the functions of an Operational Executor Agent, including both Operational GovOps and Operational Facilitator roles.</td>
+          <td>In the near term Amatsu will take on the functions of an Operational Executor Agent, including both Operational GovOps and Operational Facilitator roles.</td>
         </tr>
         <tr>
           <td>
@@ -40610,7 +41903,7 @@
           </td>
           <td>Launch Agent 2</td>
           <td>Core</td>
-          <td>The documents herein define the custom parameters of the DAOcraft Instance of the Executor Accord Primitive, if any.</td>
+          <td>The documents herein define the custom parameters of the Amatsu Instance of the Executor Accord Primitive, if any.</td>
         </tr>
         <tr>
           <td>
@@ -40618,7 +41911,7 @@
           </td>
           <td>Launch Agent 2</td>
           <td>Core</td>
-          <td>The documents herein define the process for the ongoing management of the DAOcraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein define the process for the ongoing management of the Amatsu Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -40626,7 +41919,7 @@
           </td>
           <td>Launch Agent 2</td>
           <td>Core</td>
-          <td>The documents herein contain data relevant to the DAOcraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein contain data relevant to the Amatsu Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -44289,12 +45582,12 @@
         </tr>
         <tr>
           <td>
-            <dfn>DAOcraft Instance Configuration Document Location</dfn>
+            <dfn>Amatsu Instance Configuration Document Location</dfn>
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
           <td>
-            This Instance's associated Instance Configuration Document is located at <dfn>DAOcraft Instance Configuration Document</dfn>.
+            This Instance's associated Instance Configuration Document is located at <dfn>Amatsu Instance Configuration Document</dfn>.
           </td>
         </tr>
         <tr>
@@ -44357,11 +45650,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>DAOcraft Instance Configuration Document</dfn>
+            <dfn>Amatsu Instance Configuration Document</dfn>
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
-          <td>The documents herein contain the Instance Configuration Document for the DAOcraft Executor Accord Primitive Instance.</td>
+          <td>The documents herein contain the Instance Configuration Document for the Amatsu Executor Accord Primitive Instance.</td>
         </tr>
         <tr>
           <td>
@@ -44369,7 +45662,7 @@
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
-          <td>The documents herein define the parameters of the DAOcraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein define the parameters of the Amatsu Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -44377,7 +45670,7 @@
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
-          <td>In the near term DAOcraft will take on the functions of an Operational Executor Agent, including both Operational GovOps and Operational Facilitator roles.</td>
+          <td>In the near term Amatsu will take on the functions of an Operational Executor Agent, including both Operational GovOps and Operational Facilitator roles.</td>
         </tr>
         <tr>
           <td>
@@ -44385,7 +45678,7 @@
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
-          <td>The documents herein define the custom parameters of the DAOcraft Instance of the Executor Accord Primitive, if any.</td>
+          <td>The documents herein define the custom parameters of the Amatsu Instance of the Executor Accord Primitive, if any.</td>
         </tr>
         <tr>
           <td>
@@ -44393,7 +45686,7 @@
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
-          <td>The documents herein define the process for the ongoing management of the DAOcraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein define the process for the ongoing management of the Amatsu Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -44401,7 +45694,7 @@
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
-          <td>The documents herein contain data relevant to the DAOcraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein contain data relevant to the Amatsu Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -46292,7 +47585,7 @@
           <td>Launch Agent 3</td>
           <td>Core</td>
           <td>
-            This Instance uses the Tracking Methodology specified in <dfn>A.2.4 - Ethereum Mainnet CoW Swap Tracking Methodology</dfn>. Specifically, on-chain Settlement Events on the CoW Swap settlement contract (<a href="https://etherscan.io/address/0x9008d19f58aabd9ed0d60971565aa8510560ab41">https://etherscan.io/address/0x9008d19f58aabd9ed0d60971565aa8510560ab41</a>) are checked for where they coincide perfectly with USDS deposit transactions into sUSDS.
+            This Instance uses the Tracking Methodology specified in <dfn>A.2.4 - Ethereum Mainnet CoW Swap Tracking Methodology</dfn>. Specifically, on-chain Settlement Events on the CoW Swap settlement contract (<a href="https://etherscan.io/address/0x9008D19f58AAbD9eD0D60971565AA8510560ab41">https://etherscan.io/address/0x9008D19f58AAbD9eD0D60971565AA8510560ab41</a>) are checked for where they coincide perfectly with USDS deposit transactions into sUSDS.
           </td>
         </tr>
         <tr>
