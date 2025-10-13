@@ -17295,7 +17295,7 @@
           </td>
           <td>Fluid</td>
           <td>Core</td>
-          <td>The Instance Financial RRC Ratio for Fluid is 3% of the amount of funds supplied to Fluid that are borrowed.</td>
+          <td>The Instance Financial CRR for Fluid is 3% of the amount of funds supplied to Fluid that are borrowed.</td>
         </tr>
         <tr>
           <tr>
@@ -17522,11 +17522,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.3.3 - Ethena Required Risk Capital</dfn>
+            <dfn>A.3.3 - Ethena Capital Requirement Ratio</dfn>
           </td>
-          <td>Ethena Required Risk Capital</td>
+          <td>Ethena Capital Requirement Ratio</td>
           <td>Core</td>
-          <td>Ethena Exposures consist of Direct Ethena Exposures (see <dfn>A.3.3 - Direct Ethena Exposures</dfn>), Indirect Ethena Exposures (see <dfn>A.3.3 - Indirect Ethena Exposures</dfn>), and Pendle Ethena Exposures (see <dfn>A.3.3 - Pendle Ethena Exposures</dfn>). The Instance Financial RRC for Ethena Exposures is specified in the documents herein.</td>
+          <td>Ethena Exposures consist of Direct Ethena Exposures (see <dfn>A.3.3 - Direct Ethena Exposures</dfn>), Indirect Ethena Exposures (see <dfn>A.3.3 - Indirect Ethena Exposures</dfn>), and Pendle Ethena Exposures (see <dfn>A.3.3 - Pendle Ethena Exposures</dfn>). The Instance Financial CRR for Ethena Exposures is specified in the documents herein.</td>
         </tr>
         <tr>
           <td>
@@ -17534,7 +17534,7 @@
           </td>
           <td>Direct Ethena Exposures</td>
           <td>Core</td>
-          <td>Direct Ethena Exposures are exposures from directly holding USDe and sUSDe. Direct Ethena Exposures have a 3% Instance Financial RRC Ratio.</td>
+          <td>Direct Ethena Exposures are exposures from directly holding USDe and sUSDe. Direct Ethena Exposures have a 3% Instance Financial CRR.</td>
         </tr>
         <tr>
           <td>
@@ -17542,7 +17542,7 @@
           </td>
           <td>Indirect Ethena Exposures</td>
           <td>Core</td>
-          <td><p>Indirect Ethena Exposures are exposures from lending against Ethena related assets through lending markets. Indirect Ethena Exposures have Instance Financial RRC as specified in the documents herein.</p><p>For Indirect Ethena Exposure through lending markets, only the portion of the exposure to the lending market that is backed by Ethena related assets is subject to the Instance Financial RRC Ratio specified in the documents herein. The Instance Financial RRC Ratio for the remaining portion of the exposure is calculated based on the nature of the assets backing the exposure.</p></td>
+          <td><p>Indirect Ethena Exposures are exposures from lending against Ethena related assets through lending markets. Indirect Ethena Exposures have Instance Financial CRR as specified in the documents herein.</p><p>For Indirect Ethena Exposure through lending markets, only the portion of the exposure to the lending market that is backed by Ethena related assets is subject to the Instance Financial CRR specified in the documents herein. The Instance Financial CRR for the remaining portion of the exposure is calculated based on the nature of the assets backing the exposure.</p></td>
         </tr>
         <tr>
           <td>
@@ -17550,7 +17550,7 @@
           </td>
           <td>Lending Ethena Related Assets Against Ethena Related Collateral</td>
           <td>Core</td>
-          <td>For Ethena related assets lent against Ethena related collateral (e.g. lending USDe or sUSDe against PT-USDe or PT-sUSDe), the Instance Financial RRC Ratio is 3%.</td>
+          <td>For Ethena related assets lent against Ethena related collateral (e.g. lending USDe or sUSDe against PT-USDe or PT-sUSDe), the Instance Financial CRR is 3%.</td>
         </tr>
         <tr>
           <td>
@@ -17558,7 +17558,7 @@
           </td>
           <td>Lending Non-Ethena Related Assets Against Ethena Related Collateral</td>
           <td>Core</td>
-          <td>For non-Ethena related assets lent against Ethena related collateral (e.g. lending USDC against PT-USDe or PT-sUSDe), the Instance Financial RRC Ratio is 4%.</td>
+          <td>For non-Ethena related assets lent against Ethena related collateral (e.g. lending USDC against PT-USDe or PT-sUSDe), the Instance Financial CRR is 4%.</td>
         </tr>
         <tr>
           <td>
@@ -17566,7 +17566,7 @@
           </td>
           <td>Pendle Ethena Exposures</td>
           <td>Core</td>
-          <td>Pendle Ethena Exposures are exposures from directly holding PT-USDe or PT-sUSDe. The Instance Financial RRC for Pendle Ethena Exposures is specified in the documents herein.</td>
+          <td>Pendle Ethena Exposures are exposures from directly holding PT-USDe or PT-sUSDe. The Instance Financial CRR for Pendle Ethena Exposures is specified in the documents herein.</td>
         </tr>
         <tr>
           <td>
@@ -17574,7 +17574,7 @@
           </td>
           <td>Maturity Greater Than Six Months</td>
           <td>Core</td>
-          <td>Pendle Ethena Exposures with more than six (6) months to maturity require 100% Instance Total RRC.</td>
+          <td>Pendle Ethena Exposures with more than six (6) months to maturity require 100% Instance Total CRR.</td>
         </tr>
         <tr>
           <td>
@@ -17582,7 +17582,7 @@
           </td>
           <td>Maturity Less Than Or Equal To Six Months</td>
           <td>Core</td>
-          <td><p>Pendle Ethena Exposures with less than or equal to six (6) months to maturity have Instance Financial RRC calculated as follows:</p><p><code>Instance Financial RRC = initialValue - ((currentTime - startTime) * decayRatePerSecond)</code></p><p>The parameters of this formula are defined in the documents herein.</p></td>
+          <td><p>Pendle Ethena Exposures with less than or equal to six (6) months to maturity have Instance Financial CRR calculated as follows:</p><p><code>Instance Financial CRR = initialValue - ((currentTime - startTime) * decayRatePerSecond)</code></p><p>The parameters of this formula are defined in the documents herein.</p></td>
         </tr>
         <tr>
           <td>
@@ -17590,7 +17590,7 @@
           </td>
           <td>Initial Value</td>
           <td>Core</td>
-          <td>The Initial Value <code>initialValue</code> is the Instance Financial RRC when the PT has exactly six (6) months to maturity. The <code>initialValue</code> is 15%.</td>
+          <td>The Initial Value <code>initialValue</code> is the Instance Financial CRR when the PT has exactly six (6) months to maturity. The <code>initialValue</code> is 15%.</td>
         </tr>
         <tr>
           <td>
@@ -17630,7 +17630,7 @@
           </td>
           <td>Final Value</td>
           <td>Core</td>
-          <td>The Final Value is the Instance Financial RRC when the PT is at maturity. Since the PT is convertible into the underlying asset at this point it is equal to the Instance Financial RRC for Direct Ethena Exposures specified in <dfn>A.3.3 - Direct Ethena Exposures</dfn>.</td>
+          <td>The Final Value is the Instance Financial CRR when the PT is at maturity. Since the PT is convertible into the underlying asset at this point it is equal to the Instance Financial CRR for Direct Ethena Exposures specified in <dfn>A.3.3 - Direct Ethena Exposures</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -17654,7 +17654,7 @@
           </td>
           <td>Concentration Limit</td>
           <td>Core</td>
-          <td>Any investments made by Prime Agents in Pendle Ethena Exposures in excess of 20% of their total Allocation System Investments require 100% Instance Total RRC.</td>
+          <td>Any investments made by Prime Agents in Pendle Ethena Exposures in excess of 20% of their total Allocation System Investments require 100% Instance Total CRR.</td>
         </tr>
         <tr>
           <td>
@@ -17720,11 +17720,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.3.3 - Superstate Required Risk Capital</dfn>
+            <dfn>A.3.3 - Superstate Capital Requirement Ratio</dfn>
           </td>
-          <td>Superstate Required Risk Capital</td>
+          <td>Superstate Capital Requirement Ratio</td>
           <td>Core</td>
-          <td>Superstate Exposures are exposures from holding USCC. Superstate Exposures have a 4.5% Instance Financial RRC Ratio.</td>
+          <td>Superstate Exposures are exposures from holding USCC. Superstate Exposures have a 4.5% Instance Financial CRR.</td>
         </tr>
         <tr>
           <td>
@@ -17804,7 +17804,7 @@
           </td>
           <td>Near-Term Treatment</td>
           <td>Core</td>
-          <td>In the near term pending development of the implementation of the model for direct exposures, a 25% Instance Financial RRC Ratio will be applied to all direct exposures. In the near term, direct exposures will be considered to be any assets held idle in a wallet controlled by a Prime Agent.</td>
+          <td>In the near term pending development of the implementation of the model for direct exposures, a 25% Instance Financial CRR will be applied to all direct exposures. In the near term, direct exposures will be considered to be any assets held idle in a wallet controlled by a Prime Agent.</td>
         </tr>
         <tr>
           <td>
@@ -17820,10 +17820,10 @@
           </td>
           <td>Near-Term Treatment</td>
           <td>Core</td>
-          <td>In the near term pending development of the implementation of the model for bond-like exposures, the following Instance Financial RRC Ratios will apply:
+          <td>In the near term pending development of the implementation of the model for bond-like exposures, the following Instance Financial CRR's will apply:
             <ul>
-              <li>PT-USDS - 0% Instance Financial RRC Ratio</li>
-              <li>All other bond-like exposures - 4% Instance Financial RRC Ratio</li>
+              <li>PT-USDS - 0% Instance Financial CRR</li>
+              <li>All other bond-like exposures - 4% Instance Financial CRR</li>
             </ul>
             In the near term, only Pendle PT tokens will be eligible for investment under this provision.</td>
         </tr>
@@ -18144,16 +18144,16 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.3.3 - Instance Financial RRC Ratios For Specific Assets</dfn>
+            <dfn>A.3.3 - Instance Financial CRR's For Specific Assets</dfn>
           </td>
-          <td>Instance Financial RRC Ratios For Specific Assets</td>
+          <td>Instance Financial CRR's For Specific Assets</td>
           <td>Core</td>
           <td>The following Instance Financial RRC Ratios apply to specific assets:
             <ul>
-              <li>BUIDL, JTRSY on Ethereum Mainnet, and USTB - 0% Instance Financial RRC Ratio</li>
-              <li>JTRSY on Avalanche - 0.5% Instance Financial RRC Ratio</li>
-              <li>JAAA on Ethereum Mainnet - 1.6% Instance Financial RRC Ratio</li>
-              <li>JAAA on Avalanche - 2.1% Instance Financial RRC Ratio</li>
+              <li>BUIDL, JTRSY on Ethereum Mainnet, and USTB - 0% Instance Financial CRR</li>
+              <li>JTRSY on Avalanche - 0.5% Instance Financial CRR</li>
+              <li>JAAA on Ethereum Mainnet - 1.6% Instance Financial CRR</li>
+              <li>JAAA on Avalanche - 2.1% Instance Financial CRR</li>
             </ul>
           </td>
         </tr>
@@ -18167,7 +18167,7 @@
             <ul>
               <li>The initial deployment of capital into JTRSY and JAAA on Avalanche may not exceed 20 million USDS in total;</li>
               <li>Each additional deployment of capital into JTRSY or JAAA must be approved by the Stability Scope Advisors;</li>
-              <li>Until audits of Centrifuge v3 are approved by the Protocol Security Workstream Lead, the Prime must be below a 90% Risk Tolerance Ratio on a pro forma basis assuming that each additional deployment of capital into JTRSY and JAAA requires 100% Instance Total RRC; and</li>
+              <li>Until audits of Centrifuge v3 are approved by the Protocol Security Workstream Lead, the Prime must be below a 90% Risk Tolerance Ratio on a pro forma basis assuming that each additional deployment of capital into JTRSY and JAAA requires 100% Instance Total CRR; and</li>
               <li>Total investments in JTRSY and JAAA on Avalanche may not exceed 250 million USDS.</li>
             </ul>
           </td>
@@ -18180,7 +18180,7 @@
           <td>Core</td>
           <td>Investments on Plume are subject to the following restrictions:
             <ul>
-              <li>Assets other than RWAs on Plume or being bridged to Plume require 100% Instance Total RRC; and</li>
+              <li>Assets other than RWAs on Plume or being bridged to Plume require 100% Instance Total CRR; and</li>
               <li>Total investments on Plume may not exceed 125 million USDS.</li>
             </ul>
           </td>
@@ -18199,7 +18199,7 @@
           </td>
           <td>Near-Term Treatment</td>
           <td>Core</td>
-          <td>In the near term pending development of the implementation of the model for Cash Stablecoins, a 0% Instance Financial RRC will be applied to Cash Stablecoins. In the near term, only USDS, sUSDS, Dai, sDai, USDC, USDT, and pyUSD (either held directly or through decentralized exchanges such as Curve) will be eligible for investment under this provision.</td>
+          <td>In the near term pending development of the implementation of the model for Cash Stablecoins, a 0% Instance Financial CRR will be applied to Cash Stablecoins. In the near term, only USDS, sUSDS, Dai, sDai, USDC, USDT, and pyUSD (either held directly or through decentralized exchanges such as Curve) will be eligible for investment under this provision.</td>
         </tr>
         <tr>
           <td>
@@ -18605,11 +18605,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.3.3 - Calculation Of Instance Smart Contract RRC Percentage Based on Risk Category</dfn>
+            <dfn>A.3.3 - Calculation Of Instance Smart Contract CRR Based on Risk Category</dfn>
           </td>
-          <td>Calculation Of Instance Smart Contract RRC Percentage Based on Risk Category</td>
+          <td>Calculation Of Instance Smart Contract CRR Based on Risk Category</td>
           <td>Core</td>
-          <td>The methodology used to calculate the Instance Smart Contract RRC as a percentage of the exposure depends on the Risk Rating $r$ of the protocol as specified in the documents herein.</td>
+          <td>The methodology used to calculate the Instance Smart Contract CRR as a percentage of the exposure depends on the Risk Rating $r$ of the protocol as specified in the documents herein.</td>
         </tr>
         <tr>
           <td>
@@ -18629,11 +18629,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.3.3 - Calculate Required Capital Percentage Using Piecewise Function With F1 Thresholds</dfn>
+            <dfn>A.3.3 - Calculate Capital Requirement Ratio Using Piecewise Function With F1 Thresholds</dfn>
           </td>
-          <td>Calculate Required Capital Percentage Using Piecewise Function With F1 Thresholds</td>
+          <td>Calculate Capital Requirement Ratio Using Piecewise Function With F1 Thresholds</td>
           <td>Core</td>
-          <td>The Required Capital Percentage should then be calculated by inputting the F1 parameter calculated in <dfn>A.3.3 - Calculate F1 Parameter</dfn> into the Piecewise Function specified in <dfn>A.3.3 - Piecewise Function</dfn> using the F1 thresholds specified in <dfn>A.3.3 - Kink Threshold</dfn>.</td>
+          <td>The Capital Requirement Ratio should then be calculated by inputting the F1 parameter calculated in <dfn>A.3.3 - Calculate F1 Parameter</dfn> into the Piecewise Function specified in <dfn>A.3.3 - Piecewise Function</dfn> using the F1 thresholds specified in <dfn>A.3.3 - Kink Threshold</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -18661,19 +18661,19 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.3.3 - Calculate Required Capital Percentage Using F1 Piecewise Function</dfn>
+            <dfn>A.3.3 - Calculate Capital Requirement Ratio Using F1 Piecewise Function</dfn>
           </td>
-          <td>Calculate Required Capital Percentage Using F1 Piecewise Function</td>
+          <td>Calculate Capital Requirement Ratio Using F1 Piecewise Function</td>
           <td>Core</td>
-          <td>The Required Capital Percentage using the F1 Piecewise Function should then be calculated by inputting the F1 parameter calculated in <dfn>A.3.3 - Calculate F1 Parameter</dfn> into the Piecewise Function specified in <dfn>A.3.3 - Piecewise Function</dfn> using the F1 thresholds specified in <dfn>A.3.3 - Kink Threshold</dfn>.</td>
+          <td>The Capital Requirement Ratioe using the F1 Piecewise Function should then be calculated by inputting the F1 parameter calculated in <dfn>A.3.3 - Calculate F1 Parameter</dfn> into the Piecewise Function specified in <dfn>A.3.3 - Piecewise Function</dfn> using the F1 thresholds specified in <dfn>A.3.3 - Kink Threshold</dfn>.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.3.3 - Calculate Required Capital Percentage Using F2 Piecewise Function</dfn>
+            <dfn>A.3.3 - Calculate Capital Requirement Ratio Using F2 Piecewise Function</dfn>
           </td>
-          <td>Calculate Required Capital Percentage Using F2 Piecewise Function</td>
+          <td>Calculate Capital Requirement Ratio Using F2 Piecewise Function</td>
           <td>Core</td>
-          <td>The Required Capital Percentage using the F2 Piecewise Function should then be calculated by inputting the F2 parameter calculated in <dfn>A.3.3 - Calculate F2 Parameter</dfn> into the Piecewise Function specified in <dfn>A.3.3 - Piecewise Function</dfn> using the F2 thresholds specified in <dfn>A.3.3 - Maximum Threshold</dfn>.</td>
+          <td>The Capital Requirement Ratio using the F2 Piecewise Function should then be calculated by inputting the F2 parameter calculated in <dfn>A.3.3 - Calculate F2 Parameter</dfn> into the Piecewise Function specified in <dfn>A.3.3 - Piecewise Function</dfn> using the F2 thresholds specified in <dfn>A.3.3 - Maximum Threshold</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -18701,19 +18701,19 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.3.3 - F1 Required Capital Percentage</dfn>
+            <dfn>A.3.3 - F1 Capital Requirement Ratio</dfn>
           </td>
-          <td>F1 Required Capital Percentage</td>
+          <td>F1 Capital Requirement Ratio</td>
           <td>Core</td>
-          <td>The F1 Required Capital Percentage $f_1$ is the figure calculated as the output of <dfn>A.3.3 - Calculate Required Capital Percentage Using F1 Piecewise Function</dfn>.</td>
+          <td>The F1 Capital Requirement Ratio $f_1$ is the figure calculated as the output of <dfn>A.3.3 - Calculate Capital Requirement Ratio Using F1 Piecewise Function</dfn>.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.3.3 - F2 Required Capital Percentage</dfn>
+            <dfn>A.3.3 - F2 Capital Requirement Ratio</dfn>
           </td>
-          <td>F2 Required Capital Percentage</td>
+          <td>F2 Capital Requirement Ratio</td>
           <td>Core</td>
-          <td>The F2 Required Capital Percentage $f_2$ is the figure calculated as the output of <dfn>A.3.3 - Calculate Required Capital Percentage Using F2 Piecewise Function</dfn>.</td>
+          <td>The F2 Capital Requirement Ratio $f_2$ is the figure calculated as the output of <dfn>A.3.3 - Calculate Capital Requirement Ratio Using F2 Piecewise Function</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -18733,11 +18733,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.3.3 - Calculate Required Capital Percentage Using Piecewise Function With F2 Thresholds</dfn>
+            <dfn>A.3.3 - Calculate Capital Requirement Ratio Using Piecewise Function With F2 Thresholds</dfn>
           </td>
-          <td>Calculate Required Capital Percentage Using Piecewise Function With F2 Thresholds</td>
+          <td>Calculate Capital Requirement Ratio Using Piecewise Function With F2 Thresholds</td>
           <td>Core</td>
-          <td>The Required Capital Percentage should then be calculated by inputting the F2 parameter calculated in <dfn>A.3.3 - Calculate F2 Parameter</dfn> into the Piecewise Function specified in <dfn>A.3.3 - Piecewise Function</dfn> using the F2 thresholds specified in <dfn>A.3.3 - Maximum Threshold</dfn>.</td>
+          <td>The Capital Requirement Ratio should then be calculated by inputting the F2 parameter calculated in <dfn>A.3.3 - Calculate F2 Parameter</dfn> into the Piecewise Function specified in <dfn>A.3.3 - Piecewise Function</dfn> using the F2 thresholds specified in <dfn>A.3.3 - Maximum Threshold</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -18749,27 +18749,27 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.3.3 - Maximum Required Risk Capital Percentage</dfn>
+            <dfn>A.3.3 - Maximum Capital Requirement Ratio</dfn>
           </td>
-          <td>Maximum Required Risk Capital Percentage</td>
+          <td>Maximum Capital Requirement Ratio</td>
           <td>Core</td>
-          <td>For extreme risk protocols, the required capital percentage is automatically set to 100%.</td>
+          <td>For extreme risk protocols, the Capital Requirement Ratio is automatically set to 100%.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.3.3 - Calculation Of Instance Smart Contract RRC Value</dfn>
+            <dfn>A.3.3 - Calculation Of Instance Smart Contract CRR Value</dfn>
           </td>
-          <td>Calculation Of Instance Smart Contract RRC Value</td>
+          <td>Calculation Of Instance Smart Contract CRR Value</td>
           <td>Core</td>
-          <td>The Instance Smart Contract RRC is equal to the product of (1) the Instance Smart Contract RRC Percentage calculated from <dfn>A.3.3 - Calculation Of Instance Smart Contract RRC Percentage Based on Risk Category</dfn> and (2) the exposure to the Allocation System opportunity.</td>
+          <td>The Instance Smart Contract CRR is equal to the product of (1) the Instance Smart Contract CRR calculated from <dfn>A.3.3 - Calculation Of Instance Smart Contract CRR Based on Risk Category</dfn> and (2) the exposure to the Allocation System opportunity.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.3.3 - Inputs To Instance Smart Contract RRC Calculations</dfn>
+            <dfn>A.3.3 - Inputs To Instance Smart Contract CRR Calculations</dfn>
           </td>
-          <td>Inputs To Instance Smart Contract RRC Calculations</td>
+          <td>Inputs To Instance Smart Contract CRR Calculations</td>
           <td>Core</td>
-          <td>The documents herein define functions and parameters that are used in multiple parts of the methodology for calculating the Instance Smart Contract RRC based on the Smart Contract Risk Rating specified in <dfn>A.3.3 - Calculation Of Instance Smart Contract RRC Percentage Based on Risk Category</dfn>.</td>
+          <td>The documents herein define functions and parameters that are used in multiple parts of the methodology for calculating the Instance Smart Contract CRR based on the Smart Contract Risk Rating specified in <dfn>A.3.3 - Calculation Of Instance Smart Contract CRR Based on Risk Category</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -18777,7 +18777,7 @@
           </td>
           <td>Piecewise Function</td>
           <td>Core</td>
-          <td><p>The Piecewise Function $RCC(x)$ calculates a percentage risk capital requirement based on an input $x$ and is defined as follows:</p><p>$$\text{RCC}(x) =\begin{cases}a & \text{if } x \le x_{\text{start}}, \\[8pt]b \times \dfrac{x - x_{\text{start}}}{x_{\text{kink}} - x_{\text{start}}} & \text{if } x_{\text{start}} < x \le x_{\text{kink}}, \\[8pt]b \;+\; c \;\dfrac{x - x_{\text{kink}}}{x_{\text{max}} - x_{\text{kink}}}& \text{if } x_{\text{kink}} < x < x_{\text{max}}, \\[8pt]d& \text{if } x \ge x_{\text{max}}.\end{cases}$$</p></td>
+          <td><p>The Piecewise Function $CRR(x)$ calculates a percentage risk capital requirement based on an input $x$ and is defined as follows:</p><p>$$\text{CRR}(x) =\begin{cases}a & \text{if } x \le x_{\text{start}}, \\[8pt]b \times \dfrac{x - x_{\text{start}}}{x_{\text{kink}} - x_{\text{start}}} & \text{if } x_{\text{start}} < x \le x_{\text{kink}}, \\[8pt]b \;+\; c \;\dfrac{x - x_{\text{kink}}}{x_{\text{max}} - x_{\text{kink}}}& \text{if } x_{\text{kink}} < x < x_{\text{max}}, \\[8pt]d& \text{if } x \ge x_{\text{max}}.\end{cases}$$</p></td>
         </tr>
         <tr>
           <td>
@@ -19137,7 +19137,7 @@
           </td>
           <td>Exceptions</td>
           <td>Core</td>
-          <td>The documents herein define exceptions to the calculation of Instance Smart Contract RRC for specific asset classes or protocols.</td>
+          <td>The documents herein define exceptions to the calculation of Instance Smart Contract CRR for specific asset classes or protocols.</td>
         </tr>
         <tr>
           <td>
@@ -19145,7 +19145,7 @@
           </td>
           <td>BUIDL, JTRSY, USTB, And JAAA</td>
           <td>Core</td>
-          <td>In the short term, investments in BUIDL, JTRSY, USTB, and JAAA have Instance Smart Contract RRC and Instance Administrative RRC of zero.</td>
+          <td>In the short term, investments in BUIDL, JTRSY, USTB, and JAAA have Instance Smart Contract CRR and Instance Administrative CRR of zero.</td>
         </tr>
         <tr>
           <td>
@@ -19225,7 +19225,7 @@
           </td>
           <td>Ethena</td>
           <td>Core</td>
-          <td>In the short term, Direct Ethena Exposures (see <dfn>A.3.3 - Direct Ethena Exposures</dfn>) automatically have Instance Smart Contract RRC and Instance Administrative RRC of zero. In the long term, given the similarity of these assets to Real World Assets, adapted frameworks for Smart Contract Risk and Administrative Risk for these exposures must be developed. See <dfn>A.3.3 - Long Term Application To Real World Assets</dfn>.</td>
+          <td>In the short term, Direct Ethena Exposures (see <dfn>A.3.3 - Direct Ethena Exposures</dfn>) automatically have Instance Smart Contract CRR and Instance Administrative CRR of zero. In the long term, given the similarity of these assets to Real World Assets, adapted frameworks for Smart Contract Risk and Administrative Risk for these exposures must be developed. See <dfn>A.3.3 - Long Term Application To Real World Assets</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -19233,7 +19233,7 @@
           </td>
           <td>Superstate</td>
           <td>Core</td>
-          <td>In the short term, Superstate Exposures (see <dfn>A.3.3 - Superstate Required Risk Capital</dfn>) automatically have Instance Smart Contract RRC and Instance Administrative RRC of zero. In the long term, given the similarity of these assets to Real World Assets, adapted frameworks for Smart Contract Risk and Administrative Risk for these exposures must be developed. See <dfn>A.3.3 - Long Term Application To Real World Assets</dfn>.</td>
+          <td>In the short term, Superstate Exposures (see <dfn>A.3.3 - Superstate Capital Requirement Ratio</dfn>) automatically have Instance Smart Contract CRR and Instance Administrative CRR of zero. In the long term, given the similarity of these assets to Real World Assets, adapted frameworks for Smart Contract Risk and Administrative Risk for these exposures must be developed. See <dfn>A.3.3 - Long Term Application To Real World Assets</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -19329,7 +19329,7 @@
           </td>
           <td>Exceptions</td>
           <td>Core</td>
-          <td>The documents herein define exceptions to the calculation of Instance Administrative RRC for specific asset classes or protocols.</td>
+          <td>The documents herein define exceptions to the calculation of Instance Administrative CRR for specific asset classes or protocols.</td>
         </tr>
         <tr>
           <td>
@@ -19337,7 +19337,7 @@
           </td>
           <td>BUIDL, JTRSY, USTB, and JAAA</td>
           <td>Core</td>
-          <td>The Administrative RRC for BUIDL, JTRSY, USTB, and JAAA is calculated as specified in <dfn>A.3.3 - BUIDL, JTRSY, USTB, And JAAA</dfn>.</td>
+          <td>The Administrative CRR for BUIDL, JTRSY, USTB, and JAAA is calculated as specified in <dfn>A.3.3 - BUIDL, JTRSY, USTB, And JAAA</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -19353,7 +19353,7 @@
           </td>
           <td>Ethena</td>
           <td>Core</td>
-          <td>The Administrative RRC for Ethena is calculated as specified in <dfn>A.3.3 - Ethena</dfn>.</td>
+          <td>The Administrative CRR for Ethena is calculated as specified in <dfn>A.3.3 - Ethena</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -19361,7 +19361,7 @@
           </td>
           <td>Superstate</td>
           <td>Core</td>
-          <td>The Administrative RRC for Superstate is calculated as specified in <dfn>A.3.3 - Superstate</dfn>.</td>
+          <td>The Administrative CRR for Superstate is calculated as specified in <dfn>A.3.3 - Superstate</dfn>.</td>
         </tr>
         <tr>
           <td>
