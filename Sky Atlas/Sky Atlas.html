@@ -12304,7 +12304,7 @@
                 </ul>
               </li>
               <li>Prime Agents' internal TRC management systems should enable continuous capital adequacy monitoring. The system must enable the near real-time comparison of the Prime Agent's internally tracked and calculated TRC against its official Aggregate RRC, as obtained from the Sky Core RRC Dashboard/API. See <dfn>A.2.4 - Sky Core Required Risk Capital (RRC) Dashboard And API</dfn>. This core functionality is essential for the Prime Agent to proactively monitor its capital adequacy, identify potential or actual TRC shortfalls, and make timely operational and capital management decisions to maintain compliance.</li>
-              <li><p>Prime Agents' internal TRC management systems should define a RRC-incident (e.g., TRC shortfall) response protocol. The system should enable internal alerting mechanisms that detect when a Prime Agent's TRC approaches predefined internal buffer thresholds relative to its Aggregate RRC. See <dfn>A.3.3 - Risk Tolerance Ratio</dfn>. The system should also detect an actual shortfall where the Prime Agent's held TRC falls below its Aggregate RRC.</p><p>Furthermore, Prime Agent teams should establish and document internal processes for responding to such alerts. Such internal processes should include:</p>
+              <li><p>Prime Agents' internal TRC management systems should define a RRC-incident (e.g., TRC shortfall) response protocol. The system should enable internal alerting mechanisms that detect when a Prime Agent's TRC approaches predefined internal buffer thresholds relative to its Aggregate RRC. See <dfn>A.3.3 - Encumbrance Ratio</dfn>. The system should also detect an actual shortfall where the Prime Agent's held TRC falls below its Aggregate RRC.</p><p>Furthermore, Prime Agent teams should establish and document internal processes for responding to such alerts. Such internal processes should include:</p>
                 <ol>
                   <li>internal escalation and assessment of the shortfall's cause and magnitude;</li>
                   <li>formulation of potential responses or corrective actions, which may include sourcing additional TRC, reducing risk-weighted exposures, or other measures;</li>
@@ -16479,7 +16479,7 @@
           </td>
           <td>Core Stability Parameters - Parameters - Agent Credit Line Borrow Rate - Prime Agent Credit Rating System</td>
           <td>Core</td>
-          <td>After the development of a Prime Agent Credit Rating System, the Agent Credit Line Borrow Rate will vary based on the Credit Rating of each Prime Agent. The Credit Rating for a Prime Agent will take into account factors including the Risk Tolerance Ratio.</td>
+          <td>After the development of a Prime Agent Credit Rating System, the Agent Credit Line Borrow Rate will vary based on the Credit Rating of each Prime Agent. The Credit Rating for a Prime Agent will take into account factors including the Encumbrance Ratio.</td>
         </tr>
         <tr>
           <td>
@@ -18144,7 +18144,7 @@
             <ul>
               <li>The initial deployment of capital into JTRSY and JAAA on Avalanche may not exceed 20 million USDS in total;</li>
               <li>Each additional deployment of capital into JTRSY or JAAA must be approved by the Stability Scope Advisors;</li>
-              <li>Until audits of Centrifuge v3 are approved by the Protocol Security Workstream Lead, the Prime must be below a 90% Risk Tolerance Ratio on a pro forma basis assuming that each additional deployment of capital into JTRSY and JAAA requires 100% Instance Total CRR; and</li>
+              <li>Until audits of Centrifuge v3 are approved by the Protocol Security Workstream Lead, the Prime must be below a 90% Encumbrance Ratio on a pro forma basis assuming that each additional deployment of capital into JTRSY and JAAA requires 100% Instance Total CRR; and</li>
               <li>Total investments in JTRSY and JAAA on Avalanche may not exceed 250 million USDS.</li>
             </ul>
           </td>
@@ -19782,11 +19782,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.3.3 - Risk Tolerance Ratio</dfn>
+            <dfn>A.3.3 - Encumbrance Ratio</dfn>
           </td>
-          <td>Risk Tolerance Ratio</td>
+          <td>Encumbrance Ratio</td>
           <td>Core</td>
-          <td>The Risk Tolerance Ratio for a Prime Agent is the ratio of its Aggregate Required Risk Capital to its Total Risk Capital.</td>
+          <td>The Encumbrance Ratio for a Prime Agent is the ratio of its Aggregate Required Risk Capital to its Total Risk Capital.</td>
         </tr>
         <tr>
           <td>
@@ -19802,7 +19802,7 @@
           </td>
           <td>Low Severity Breach Definition</td>
           <td>Core</td>
-          <td>A Low Severity Breach is one in which the Risk Tolerance Ratio is greater than or equal to 100% but less than 103%.</td>
+          <td>A Low Severity Breach is one in which the Encumbrance Ratio is greater than or equal to 100% but less than 103%.</td>
         </tr>
         <tr>
           <td>
@@ -19810,7 +19810,7 @@
           </td>
           <td>High Severity Breach Definition</td>
           <td>Core</td>
-          <td>A High Severity Breach is one in which the Risk Tolerance Ratio is greater than 103%.</td>
+          <td>A High Severity Breach is one in which the Encumbrance Ratio is greater than 103%.</td>
         </tr>
         <tr>
           <td>
@@ -19914,7 +19914,7 @@
           </td>
           <td>Short-Term Exemption</td>
           <td>Core</td>
-          <td>While the Risk Framework undergoes refinement, penalties for any Prime Agent breaches of Required Risk Capital will be calculated by Core GovOps once the infrastructure is in place to do so. This calculation serves the purposes of system monitoring, data gathering, and framework calibration. However, throughout this interim phase, such calculated penalties will not be formally assessed against Prime Agents, and consequently, Prime Agents will not be required to make payment for these penalties. Notwithstanding this temporary exemption from penalty payment, Prime Agents are expected to maintain a Risk Tolerance Ratio of less than or equal to 90%. See <dfn>A.3.3 - Risk Tolerance Ratio.</dfn></td>
+          <td>While the Risk Framework undergoes refinement, penalties for any Prime Agent breaches of Required Risk Capital will be calculated by Core GovOps once the infrastructure is in place to do so. This calculation serves the purposes of system monitoring, data gathering, and framework calibration. However, throughout this interim phase, such calculated penalties will not be formally assessed against Prime Agents, and consequently, Prime Agents will not be required to make payment for these penalties. Notwithstanding this temporary exemption from penalty payment, Prime Agents are expected to maintain an Encumbrance Ratio of less than or equal to 90%. See <dfn>A.3.3 - Encumbrance Ratio.</dfn></td>
         </tr>
         <tr>
           <td>
@@ -30464,11 +30464,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>Spark's Operation Of Spark Liquidity Layer And Agreement Regarding Risk Tolerance Ratio</dfn>
+            <dfn>Spark's Operation Of Spark Liquidity Layer And Agreement Regarding Encumbrance Ratio</dfn>
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>Spark will continue to operate the Spark Liquidity Layer and agrees to stay at or below a 90% Risk Tolerance Ratio. See <dfn>A.3.3 - Risk Tolerance Ratio</dfn>.</td>
+          <td>Spark will continue to operate the Spark Liquidity Layer and agrees to stay at or below a 90% Encumbrance Ratio. See <dfn>A.3.3 - Encumbrance Ratio</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -40720,11 +40720,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>Risk Tolerance Ratio</dfn>
+            <dfn>Encumbrance Ratio</dfn>
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The documents herein define Spark's policy for managing the Risk Tolerance Ratio.</td>
+          <td>The documents herein define Spark's policy for managing the Encumbrance Ratio.</td>
         </tr>
         <tr>
           <td>
@@ -40732,7 +40732,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The Risk Tolerance Ratio is defined as the ratio of Spark's Required Risk Capital (RRC) to Total Risk Capital (TRC), as these terms are defined in the Sky Atlas Stability Scope (<dfn>A.3.3 - Risk Tolerance Ratio</dfn>). Spark will seek to maintain a Risk Tolerance Ratio not greater than the Target Risk Tolerance Ratio specified in <dfn>Parameters</dfn>.</td>
+          <td>The Encumbrance Ratio is defined as the ratio of Spark's Required Risk Capital (RRC) to Total Risk Capital (TRC), as these terms are defined in the Sky Atlas Stability Scope (<dfn>A.3.3 - Encumbrance Ratio</dfn>). Spark will seek to maintain an Encumbrance Ratio not greater than the Target Encumbrance Ratio specified in <dfn>Parameters</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -40740,7 +40740,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><p>Spark governance and contributors must take immediate action to reduce the Risk Tolerance Ratio when it exceeds the Target Risk Tolerance Ratio level. These actions may fall into two categories, risk capital actions or allocation system actions.</p><p>Risk capital actions are actions Spark takes to increase Total Risk Capital, including increasing Internal Junior Risk Capital, sourcing External Junior Risk Capital from other Prime Agents or tokenized sources, or sourcing External Senior Risk Capital from Sky or tokenized sources.</p><p>Allocation system actions involve adjusting the capital allocations within the Spark instance of the Allocation System to reduce Required Risk Capital, such as unwinding or disposing of assets requiring higher levels of risk capital as a percent of exposure.</p><p>The operational processes implemented at Spark will meet or exceed the requirements specified in the Sky Atlas at <dfn>A.2.4 - Primes' Total Risk Capital (TRC) Management</dfn>.</p></td>
+          <td><p>Spark governance and contributors must take immediate action to reduce the Encumbrance Ratio when it exceeds the Target Encumbrance Ratio level. These actions may fall into two categories, risk capital actions or allocation system actions.</p><p>Risk capital actions are actions Spark takes to increase Total Risk Capital, including increasing Internal Junior Risk Capital, sourcing External Junior Risk Capital from other Prime Agents or tokenized sources, or sourcing External Senior Risk Capital from Sky or tokenized sources.</p><p>Allocation system actions involve adjusting the capital allocations within the Spark instance of the Allocation System to reduce Required Risk Capital, such as unwinding or disposing of assets requiring higher levels of risk capital as a percent of exposure.</p><p>The operational processes implemented at Spark will meet or exceed the requirements specified in the Sky Atlas at <dfn>A.2.4 - Primes' Total Risk Capital (TRC) Management</dfn>.</p></td>
         </tr>
         <tr>
           <td>
@@ -40748,7 +40748,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><p>The current Target Risk Tolerance Ratio is 90%.</p><p>This parameter will be maintained in parallel with the value specified in the Spark Artifact Allocation System Primitive section at <dfn>Spark's Operation Of Spark Liquidity Layer And Agreement Regarding Risk Tolerance Ratio</dfn>; any change to one section of the Spark Artifact will require a corresponding change in the other section.</p></td>
+          <td><p>The current Target Encumbrance Ratio is 90%.</p><p>This parameter will be maintained in parallel with the value specified in the Spark Artifact Allocation System Primitive section at <dfn>Spark's Operation Of Spark Liquidity Layer And Agreement Regarding Encumbrance Ratio</dfn>; any change to one section of the Spark Artifact will require a corresponding change in the other section.</p></td>
         </tr>
         <tr>
           <td>
@@ -43750,11 +43750,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>Grove Labs's Operation Of Grove Liquidity Layer And Agreement Regarding Risk Tolerance Ratio</dfn>
+            <dfn>Grove Labs's Operation Of Grove Liquidity Layer And Agreement Regarding Encumbrance Ratio</dfn>
           </td>
           <td>Grove</td>
           <td>Core</td>
-          <td>Grove Labs will operate the Grove Liquidity Layer and agrees to stay at or below a 90% Risk Tolerance Ratio. See <dfn>A.3.3 - Risk Tolerance Ratio</dfn>.</td>
+          <td>Grove Labs will operate the Grove Liquidity Layer and agrees to stay at or below a 90% Encumbrance Ratio. See <dfn>A.3.3 - Encumbrance Ratio</dfn>.</td>
         </tr>
         <tr>
           <td>
