@@ -2167,7 +2167,7 @@ This includes calculating:
 4. the amount to be paid out to each Aligned Delegate.
 5. Once calculated by the Core Facilitator, AD payouts are paid from the Aligned Delegates Buffer Multisig. See [A.2.4.1.4.1.2.1 - Aligned Delegates Buffer](05fa5c41-26ca-4c25-94dd-834ef72c318a).
 
-###### NR-10 - AD Budget Management [Needed Research]  <!-- UUID: 6502ce76-3f29-4f50-a68c-9126feba1fb6 -->
+###### NR-11 - AD Budget Management [Needed Research]  <!-- UUID: 6502ce76-3f29-4f50-a68c-9126feba1fb6 -->
 
 **Content**:
 
@@ -2299,7 +2299,7 @@ The Core Facilitators' abuse of this discretionary power is severe misalignment.
 
 The Core Facilitator's failure to act promptly in addressing credible evidence of misalignment is considered an act of misalignment itself. Formal allegations of such failure must be adjudicated by Core GovOps to the same process referenced in the above-cited document.
 
-#### NR-11 - Addressing Misalignment Of Ecosystem Actors Or Other Governance Participants [Needed Research]  <!-- UUID: 9962c7cc-9df2-4c37-89d6-746d004a056d -->
+#### NR-12 - Addressing Misalignment Of Ecosystem Actors Or Other Governance Participants [Needed Research]  <!-- UUID: 9962c7cc-9df2-4c37-89d6-746d004a056d -->
 
 **Content**:
 
@@ -6254,7 +6254,7 @@ This Section defines bootstrapping measures that can override requirements and s
 
 When conflicting Atlas Edit Proposals are approved within a short period of each other, the Core Facilitator can decide to merge parts of the proposals together to ensure that the aggregate changes incorporate the best updates from each of the conflicting proposals.
 
-##### NR-12 - Conflicting Atlas Edit Proposals [Needed Research]  <!-- UUID: ab868a43-3f89-4e9e-b281-6078e655e065 -->
+##### NR-13 - Conflicting Atlas Edit Proposals [Needed Research]  <!-- UUID: ab868a43-3f89-4e9e-b281-6078e655e065 -->
 
 **Content**:
 
