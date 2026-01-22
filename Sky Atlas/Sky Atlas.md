@@ -2115,7 +2115,7 @@ If an RD provides the required voting-communication on less than 95% of all elig
 
 Should an RD's voting-communication activity fall to 75% of all eligible votes within the last six (6) months, they become completely ineligible to receive RD income. If the RD is a Level 3 Ranked Delegate, their RD rank, and the budget eligibility associated with that rank, is transferred to the next highest-ranking AD, as determined by total amount of SKY delegated to their Delegate Contract.
 
-###### NR-11 - Criteria For AD Voting-Communication Requirement [Needed Research]  <!-- UUID: ea34cf2b-b756-4c55-b317-7e4802b6f9b3 -->
+###### NR-10 - Criteria For AD Voting-Communication Requirement [Needed Research]  <!-- UUID: ea34cf2b-b756-4c55-b317-7e4802b6f9b3 -->
 
 **Content**:
 
@@ -2299,7 +2299,7 @@ The Core Facilitators' abuse of this discretionary power is severe misalignment.
 
 The Core Facilitator's failure to act promptly in addressing credible evidence of misalignment is considered an act of misalignment itself. Formal allegations of such failure must be adjudicated by Core GovOps to the same process referenced in the above-cited document.
 
-#### NR-12 - Addressing Misalignment Of Ecosystem Actors Or Other Governance Participants [Needed Research]  <!-- UUID: 9962c7cc-9df2-4c37-89d6-746d004a056d -->
+#### NR-11 - Addressing Misalignment Of Ecosystem Actors Or Other Governance Participants [Needed Research]  <!-- UUID: 9962c7cc-9df2-4c37-89d6-746d004a056d -->
 
 **Content**:
 
@@ -6254,7 +6254,7 @@ This Section defines bootstrapping measures that can override requirements and s
 
 When conflicting Atlas Edit Proposals are approved within a short period of each other, the Core Facilitator can decide to merge parts of the proposals together to ensure that the aggregate changes incorporate the best updates from each of the conflicting proposals.
 
-##### NR-13 - Conflicting Atlas Edit Proposals [Needed Research]  <!-- UUID: ab868a43-3f89-4e9e-b281-6078e655e065 -->
+##### NR-12 - Conflicting Atlas Edit Proposals [Needed Research]  <!-- UUID: ab868a43-3f89-4e9e-b281-6078e655e065 -->
 
 **Content**:
 
