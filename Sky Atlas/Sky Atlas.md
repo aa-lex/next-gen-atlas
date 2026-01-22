@@ -1506,14 +1506,6 @@ Given the exceptionally high stakes in cases of potential AC misalignment, Facil
 
 An Alignment Conserver can assume one of two roles: Aligned Delegate (AD) and Facilitator. ACs may only be operationally active in a single AC role and may not simultaneously assume multiple AC roles or other ecosystem roles such as Ecosystem Actors.
 
-#### A.1.4.5.1 - Exception for ADs Contributing To Atlas Core Development [Core]  <!-- UUID: 79ad7aaa-bf57-40f4-9824-589982e79d0c -->
-
-[A.1.5.3.5.2 - Atlas Workstreams](ee672cbf-035c-4c1a-a76d-da58489b0cd0) is an exception to the general rule prohibiting Alignment Conservers from being operationally active in multiple ecosystem roles.
-
-#### A.1.4.5.2 - Temporary Exception for Facilitator “Ecosystem” [Core]  <!-- UUID: 6aa88317-4dc2-4b50-87bd-27cc6de9c767 -->
-
-The Facilitator "Ecosystem" is temporarily exempt from the general rule prohibiting Alignment Conservers from being operationally active in multiple ecosystem roles. "Ecosystem" will continue to act in the Facilitator role as well as provide operational services as an Ecosystem Actor. This exception must be resolved as soon as it is reasonably possible to do so.
-
 #### NR-2 - Should Ban Against Occupying Two Ecosystem Roles Apply to All Sky Stakeholder Roles? [Needed Research]  <!-- UUID: 25d8f23b-4d43-43be-aa5a-c48fe372cd7a -->
 
 **Content**:
@@ -1531,6 +1523,14 @@ One argument against this would be that quality contributors are a scarce resour
 The sharing of contributors across several Sky teams  - such that contributors gain experience in multiple operational aspects - might arguably enhance ecosystem intelligence. 
 
 Would it make a meaningful difference to require contributors who do wish to work multiple roles to be doxxed?
+
+#### A.1.4.5.1 - Exception for ADs Contributing To Atlas Core Development [Core]  <!-- UUID: 79ad7aaa-bf57-40f4-9824-589982e79d0c -->
+
+[A.1.5.3.5.2 - Atlas Workstreams](ee672cbf-035c-4c1a-a76d-da58489b0cd0) is an exception to the general rule prohibiting Alignment Conservers from being operationally active in multiple ecosystem roles.
+
+#### A.1.4.5.2 - Temporary Exception for Facilitator “Ecosystem” [Core]  <!-- UUID: 6aa88317-4dc2-4b50-87bd-27cc6de9c767 -->
+
+The Facilitator "Ecosystem" is temporarily exempt from the general rule prohibiting Alignment Conservers from being operationally active in multiple ecosystem roles. "Ecosystem" will continue to act in the Facilitator role as well as provide operational services as an Ecosystem Actor. This exception must be resolved as soon as it is reasonably possible to do so.
 
 #### A.1.4.5.0.3.1 - Operationally Active - Element Annotation [Annotation]  <!-- UUID: 8d706ce8-3d1f-4791-b416-a3a037b93feb -->
 
@@ -1688,14 +1688,6 @@ When an Alignment Conserver breaches a role-specific requirement, this is misali
 
 The Alignment Conserver roles of Facilitator and Aligned Delegate require anonymity and high levels of operational security. Breaches of these anonymity and operational security requirements are considered serious misalignment. In the event of such breaches, the known identities of individuals holding these AC roles shall be promptly derecognized, and they will be barred from further participation as Alignment Conservers.
 
-#### A.1.4.7.1 - Exemption From Facilitator Anonymity Requirement [Core]  <!-- UUID: cb2ae821-e9b8-47b0-bda8-bc8bb149c5b5 -->
-
-The Facilitator "Ecosystem" is exempt from the anonymity requirement, as well as the requirement of high levels of operational security insofar as the latter requirement relates to maintaining anonymity. This exemption applies solely to the Facilitator "Ecosystem", as they onboarded into the role prior to the ratification of Atlas v1 (March 27, 2023), which introduced the anonymity requirement for Facilitators.
-
-This exemption applies to limit the effect of the following provisions: [A.1.6.3 - Facilitators Must Maintain High Level Of Operational Security](014feb92-49dc-4117-911f-a6ec14451b30); [A.1.6.4 - Derecognition Required Where Facilitator Operational Security Is Compromised](c3ba34f0-b3f0-449b-b609-52548db090ea); [A.1.6.5 - Facilitators Must Err On Side Of Caution](ac9df70a-d110-42da-805a-abe03b52dcdc); and [A.0.1.1.19 - Facilitator](912e0161-3448-470f-9cf6-d1a26d76acab). 
-
-This limited exemption takes precedence over any conflicting provisions in the Atlas.
-
 #### NR-4 - Operational Security Protocols - Research Track [Needed Research]  <!-- UUID: e33879c1-93d0-48a6-8f08-ad00a4821bde -->
 
 **Content**:
@@ -1709,6 +1701,14 @@ With an explicit framework of agreed-upon Best Practices, all anon Alignment Con
 The Security Scope Advisor could also assist in reviewing an informant's evidence to evaluate its validity/quality. The Security Scope Advisor could ensure that the methods used by the informant to secure the evidence were ethical. (All communications, evidence and data shared with the Security Scope Advisor would be under confidentiality protection). Finally, such an Advisor would have specialized expertise in opsec and associated matters that the Core Facilitator lacks".
 
 This Needed Research is an extensive Research Track, given the wide-ranging implications and potential mechanisms around opsec best practices, and also how these should map onto the Atlas.
+
+#### A.1.4.7.1 - Exemption From Facilitator Anonymity Requirement [Core]  <!-- UUID: cb2ae821-e9b8-47b0-bda8-bc8bb149c5b5 -->
+
+The Facilitator "Ecosystem" is exempt from the anonymity requirement, as well as the requirement of high levels of operational security insofar as the latter requirement relates to maintaining anonymity. This exemption applies solely to the Facilitator "Ecosystem", as they onboarded into the role prior to the ratification of Atlas v1 (March 27, 2023), which introduced the anonymity requirement for Facilitators.
+
+This exemption applies to limit the effect of the following provisions: [A.1.6.3 - Facilitators Must Maintain High Level Of Operational Security](014feb92-49dc-4117-911f-a6ec14451b30); [A.1.6.4 - Derecognition Required Where Facilitator Operational Security Is Compromised](c3ba34f0-b3f0-449b-b609-52548db090ea); [A.1.6.5 - Facilitators Must Err On Side Of Caution](ac9df70a-d110-42da-805a-abe03b52dcdc); and [A.0.1.1.19 - Facilitator](912e0161-3448-470f-9cf6-d1a26d76acab). 
+
+This limited exemption takes precedence over any conflicting provisions in the Atlas.
 
 #### A.1.4.7.0.4.1 - ADs & Facilitators required to adhere to comprehensive operational security practices [Action Tenet]  <!-- UUID: 598ff9cf-146e-4499-93d3-583518c390a1 -->
 
@@ -1750,6 +1750,20 @@ In the adjudication of these matters, the Core Facilitator is mandated to hold A
 
 The adjudication process is further defined in the subdocuments herein.
 
+#### NR-8 - Systematic Basis Of Adjudication, Fact-Finding And Evidence [Needed Research]  <!-- UUID: 279f417e-2fec-473d-ab7c-eaf5b371c598 -->
+
+**Content**:
+
+This need is an extensive Research Track. The central research need that grows out of the Facilitator role has to do with developing systematic principles and protocols to serve as the foundation for adjudicating disputes and controversies, including processes for fact-finding, evidence validation and evaluation, mechanisms for ensuring impartiality and objectivity, an appeals process, etc. 
+
+The Atlas has made a good start with establishing an adjudication framework. There is some logic concerning procedures for how disputes and controversies (including Alignment Conserver misalignment) are brought forward and how they are reviewed. But essential elements are missing, such as protocols and standards for fact-finding and evidence. 
+
+Needed Research here includes methods for implementing a structured fact-finding process that gathers relevant information impartially and comprehensively. Who has the authority to investigate, to request evidence, to handle evidence?  What types of evidence are permissible to consider? See [Responsibly Provided - Whistleblower Evidence Of Misalignment Must Be Secured Ethically](ba46ef4f-2ed6-4b16-b5b5-8a3ee01ad18d). What are the processes for collecting, preserving, and analyzing this evidence? When should evidence be shared with the larger community and when should it be kept confidential? 
+
+Then there is the matter of assessing evidence in a way that is rigorous and impartial, without which, confidence in the Atlas and the governance process may be undermined. What criteria should be used to validate and evaluate evidence to ensure its reliability and relevance in decision-making? This involves determining the credibility of sources, the reliability of evidence, and the relevance of information to the specific case. The research should explore different approaches to evidence evaluation, such as the application of the burden of proof, standards of proof (e.g., preponderance of evidence, beyond a reasonable doubt), and the use of experts. 
+
+How much discretion should Facilitators have in interpreting and applying the element "the highest standard of Universal Alignment"? How to safeguard against bias and ensure all Facilitator adjudications are made impartially? Investigate mechanisms to maintain objectivity and impartiality throughout the adjudication, fact-finding, and evidence evaluation processes. This could include the establishment of independent review panels (which could operate post facto to avoid excessively delaying the deplatforming of misaligned ACs), the use of conflict-of-interest policies, and training on cognitive biases for those involved in decision-making.
+
 #### A.1.4.9.1 - Opportunity to Respond [Core]  <!-- UUID: 4217002f-6c87-45fb-80ac-598472e3fff9 -->
 
 As part of the formal adjudication of AC misalignment or operational security breach, the Core Facilitator must provide the individual/entity subject to the allegation with an opportunity to respond.
@@ -1766,15 +1780,15 @@ If the Core Facilitator concludes that the allegation of misalignment or operati
 
 In cases of very mild "slippery slope" breaches of the Alignment Conserver requirements, a formal warning may be given and recorded in the subdocuments herein. Where such a breach was the first instance of misalignment by the Alignment Conserver, no disciplinary measures beyond a formal warning are required.
 
-###### A.1.4.9.2.1.1 - Warning Notice [Core]  <!-- UUID: 0222d1c6-67ab-456e-82d6-41f3b834f285 -->
-
-Formal warnings are issued publicly, and justification and reasoning must be provided by the Core Facilitator.
-
 ###### NR-6 - Defining Threshold For “Very Mild Slippery Slope" Breaches [Needed Research]  <!-- UUID: db47c59f-a822-4213-9305-8c8eb07c41f0 -->
 
 **Content**:
 
 What specific actions or omissions qualify as "very mild slippery slope" breaches? Helpful research can include: developing a set of criteria or a checklist that defines what constitutes a "very mild slippery slope" breach. This could involve an analysis of past or hypothetical incidents, consultations with the Facilitators, etc. Such guidelines are likely needed to help Facilitators reliably determine whether an act should be classified as a 'minor' slippery slope infraction or a more severe act which would merit derecognition.
+
+###### A.1.4.9.2.1.1 - Warning Notice [Core]  <!-- UUID: 0222d1c6-67ab-456e-82d6-41f3b834f285 -->
+
+Formal warnings are issued publicly, and justification and reasoning must be provided by the Core Facilitator.
 
 ###### A.1.4.9.2.1.2 - Warning Recording [Active Data Controller]  <!-- UUID: ba80af50-c233-418b-8ed0-88dad26a9dc9 -->
 
@@ -1846,20 +1860,6 @@ The element "where feasible" means that the Core Facilitator have discretion to 
 
 If the Core Facilitator is the subject of an allegation of misalignment or operational security breach, the adjudication process may be initiated by Core GovOps.
 
-#### NR-8 - Systematic Basis Of Adjudication, Fact-Finding And Evidence [Needed Research]  <!-- UUID: 279f417e-2fec-473d-ab7c-eaf5b371c598 -->
-
-**Content**:
-
-This need is an extensive Research Track. The central research need that grows out of the Facilitator role has to do with developing systematic principles and protocols to serve as the foundation for adjudicating disputes and controversies, including processes for fact-finding, evidence validation and evaluation, mechanisms for ensuring impartiality and objectivity, an appeals process, etc. 
-
-The Atlas has made a good start with establishing an adjudication framework. There is some logic concerning procedures for how disputes and controversies (including Alignment Conserver misalignment) are brought forward and how they are reviewed. But essential elements are missing, such as protocols and standards for fact-finding and evidence. 
-
-Needed Research here includes methods for implementing a structured fact-finding process that gathers relevant information impartially and comprehensively. Who has the authority to investigate, to request evidence, to handle evidence?  What types of evidence are permissible to consider? See [Responsibly Provided - Whistleblower Evidence Of Misalignment Must Be Secured Ethically](ba46ef4f-2ed6-4b16-b5b5-8a3ee01ad18d). What are the processes for collecting, preserving, and analyzing this evidence? When should evidence be shared with the larger community and when should it be kept confidential? 
-
-Then there is the matter of assessing evidence in a way that is rigorous and impartial, without which, confidence in the Atlas and the governance process may be undermined. What criteria should be used to validate and evaluate evidence to ensure its reliability and relevance in decision-making? This involves determining the credibility of sources, the reliability of evidence, and the relevance of information to the specific case. The research should explore different approaches to evidence evaluation, such as the application of the burden of proof, standards of proof (e.g., preponderance of evidence, beyond a reasonable doubt), and the use of experts. 
-
-How much discretion should Facilitators have in interpreting and applying the element "the highest standard of Universal Alignment"? How to safeguard against bias and ensure all Facilitator adjudications are made impartially? Investigate mechanisms to maintain objectivity and impartiality throughout the adjudication, fact-finding, and evidence evaluation processes. This could include the establishment of independent review panels (which could operate post facto to avoid excessively delaying the deplatforming of misaligned ACs), the use of conflict-of-interest policies, and training on cognitive biases for those involved in decision-making.
-
 #### A.1.4.9.0.4.1 - ACs Must Go Beyond Mere Technical Compliance With Rules [Action Tenet]  <!-- UUID: 8d8980b8-3ac7-49c6-8bc9-f601733a3198 -->
 
 Alignment Conservers (ACs) must meet the most stringent standards for Universal Alignment, demonstrating not only compliance with the letter of the rules but also a deep and authentic commitment to the spirit of the rules, i.e., the underlying principles and goals of Sky. This demanding standard goes beyond mere technical compliance and requires proof of genuine intent and actions consistent with upholding the Spirit of the Atlas. 
@@ -1876,15 +1876,15 @@ Derecognition is the ultimate accountability measure for misalignment and entail
 
 The subdocuments herein define rules and processes related to Alignment Conserver Derecognition.
 
-#### A.1.4.10.1 - Derecognition Notice [Core]  <!-- UUID: 9c05207d-5e11-43ae-a8a3-1b61734d6ef9 -->
-
-Derecognition notices are issued publicly, and justification and reasoning must be provided by the Core Facilitator.
-
 #### NR-9 - Derecognition Uncertainty Due To Anonymous Actors [Needed Research]  <!-- UUID: 69e4df9f-d2f3-4fd2-9add-e1314a0a5eb3 -->
 
 **Content**:
 
 The Target Document defines the act of derecognition as "permanently removing" an entity from the Alignment Conserver role. In fact, it is not possible to effect such a permanent removal. Given the presence of anonymous/pseudonymous actors in the decentralized "workforce" of the Sky ecosystem, a known identity of an actor can be barred from an AC role; and yet that actor can easily re-enter the system under a different pseudonym or identity. Consider what measures can be implemented to counteract the scenario where derecognized entities reappear under a different guise. A robust reputation system is already planned; by tracking reputation that is earned over a long timescale, a derecognized entity would be barred from quickly regaining a foothold.
+
+#### A.1.4.10.1 - Derecognition Notice [Core]  <!-- UUID: 9c05207d-5e11-43ae-a8a3-1b61734d6ef9 -->
+
+Derecognition notices are issued publicly, and justification and reasoning must be provided by the Core Facilitator.
 
 #### A.1.4.10.2 - Derecognition Recording [Active Data Controller]  <!-- UUID: 15def023-af2e-4a27-92c4-6fab7b6f02f6 -->
 
@@ -10303,7 +10303,7 @@ Relevant Ecosystem Actors must take all necessary actions to transfer all funds 
 
 All funds that would otherwise be transferred into or out of Legacy Accounts must instead be transferred into or out of the Core Council Buffer.
 
-###### A.2.4.1.4.1.1.1.6.3 - Follow-Up Actions [Core]  <!-- UUID: 104c08ce-04db-4b08-8cd7-ae6cf5c3dc09 -->
+###### A.2.4.1.4.1.1.1.6.4 - Follow-Up Actions [Core]  <!-- UUID: 104c08ce-04db-4b08-8cd7-ae6cf5c3dc09 -->
 
 Core GovOps must propose a subsequent Atlas Edit Proposal removing all references to Legacy Accounts from the Atlas and replacing them with the Core Council Buffer.
 
